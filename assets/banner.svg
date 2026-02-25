@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2980b9"/>
+      <stop offset="50%" stop-color="#5dade2"/>
+      <stop offset="100%" stop-color="#aed6f1"/>
+    </linearGradient>
+    <linearGradient id="cityGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      @keyframes twinkle1 { 0%,100% { opacity: 0.2; } 50% { opacity: 1; } }
+      @keyframes twinkle2 { 0%,100% { opacity: 0.5; } 50% { opacity: 0.9; } }
+      @keyframes twinkle3 { 0%,100% { opacity: 0.1; } 50% { opacity: 0.8; } }
+      @keyframes windowGlow { 0%,100% { opacity: 0.25; } 50% { opacity: 0.8; } }
+      @keyframes cloudDrift { 0% { transform: translateX(0); } 100% { transform: translateX(30px); } }
+      @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+      .s1 { animation: twinkle1 3s ease-in-out infinite; }
+      .s2 { animation: twinkle2 2.5s ease-in-out infinite 0.8s; }
+      .s3 { animation: twinkle3 4s ease-in-out infinite 1.5s; }
+      .s4 { animation: twinkle1 3.5s ease-in-out infinite 2s; }
+      .s5 { animation: twinkle2 2s ease-in-out infinite 0.3s; }
+      .w1 { animation: windowGlow 4s ease-in-out infinite; }
+      .w2 { animation: windowGlow 3s ease-in-out infinite 1s; }
+      .w3 { animation: windowGlow 5s ease-in-out infinite 2s; }
+      .cloud1 { animation: cloudDrift 20s ease-in-out infinite alternate; }
+      .cloud2 { animation: cloudDrift 25s ease-in-out infinite alternate-reverse; }
+      .name-text {
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 52px; font-weight: 700; fill: #FFFFFF;
+        animation: fadeIn 2s ease-in;
+      }
+      .sub-text {
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 13px; font-weight: 400; fill: #58A6FF;
+        letter-spacing: 5px; animation: fadeIn 3s ease-in;
+      }
+      .weather-text {
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 11px; fill: #8B949E; letter-spacing: 1px;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#sky)"/>
+  <ellipse cx="600" cy="300" rx="550" ry="80" fill="url(#cityGlow)"/>
+
+  <circle cx="950" cy="60" r="30" fill="#f9d71c" opacity="0.9"/>
+  <circle cx="950" cy="60" r="36" fill="#f9d71c" opacity="0.15"/>
+
+
+
+
+  <text class="name-text" x="600" y="120" text-anchor="middle">Zakir Jiwani</text>
+  <text class="sub-text" x="600" y="148" text-anchor="middle">PHILADELPHIA, PA</text>
+  <text class="weather-text" x="1175" y="18" text-anchor="end">38F / Clear Sky</text>
+  <text class="weather-text" x="1175" y="32" text-anchor="end">9:57 AM ET</text>
+
+  <rect x="0" y="242" width="40" height="58" fill="#0D1117"/>
+  <rect x="45" y="252" width="30" height="48" fill="#0D1117"/>
+  <rect x="80" y="238" width="35" height="62" fill="#0D1117"/>
+  <rect x="120" y="248" width="25" height="52" fill="#0D1117"/>
+  <rect x="155" y="212" width="28" height="88" fill="#0D1117"/>
+  <rect x="150" y="210" width="38" height="4" fill="#0D1117"/>
+  <rect x="200" y="218" width="35" height="82" fill="#0D1117"/>
+  <ellipse cx="217" cy="218" rx="17.5" ry="7" fill="#0D1117"/>
+  <rect x="248" y="258" width="55" height="42" fill="#0D1117"/>
+  <rect x="252" y="254" width="47" height="6" fill="#0D1117"/>
+  <rect x="315" y="242" width="25" height="58" fill="#0D1117"/>
+  <rect x="345" y="232" width="30" height="68" fill="#0D1117"/>
+  <rect x="390" y="178" width="30" height="122" fill="#0D1117"/>
+  <rect x="385" y="175" width="40" height="5" fill="#0D1117"/>
+  <rect x="403" y="168" width="4" height="9" fill="#0D1117"/>
+  <rect x="440" y="192" width="32" height="108" fill="#0D1117"/>
+  <polygon points="456,192 440,212 472,212" fill="#0D1117"/>
+  <rect x="454" y="178" width="4" height="16" fill="#0D1117"/>
+  <rect x="482" y="202" width="28" height="98" fill="#0D1117"/>
+  <polygon points="496,202 482,218 510,218" fill="#0D1117"/>
+  <rect x="494" y="192" width="4" height="12" fill="#0D1117"/>
+  <rect x="518" y="235" width="22" height="65" fill="#0D1117"/>
+  <rect x="546" y="228" width="20" height="72" fill="#0D1117"/>
+  <rect x="578" y="222" width="50" height="78" fill="#0D1117"/>
+  <rect x="593" y="202" width="20" height="24" fill="#0D1117"/>
+  <rect x="600" y="188" width="6" height="16" fill="#0D1117"/>
+  <rect x="602" y="182" width="2" height="8" fill="#0D1117"/>
+  <rect x="642" y="198" width="30" height="102" fill="#0D1117"/>
+  <rect x="637" y="195" width="40" height="5" fill="#0D1117"/>
+  <rect x="688" y="212" width="28" height="88" fill="#0D1117"/>
+  <rect x="724" y="238" width="22" height="62" fill="#0D1117"/>
+  <rect x="752" y="228" width="30" height="72" fill="#0D1117"/>
+  <rect x="790" y="242" width="25" height="58" fill="#0D1117"/>
+  <rect x="822" y="235" width="32" height="65" fill="#0D1117"/>
+  <rect x="862" y="248" width="28" height="52" fill="#0D1117"/>
+  <rect x="898" y="238" width="22" height="62" fill="#0D1117"/>
+  <rect x="928" y="252" width="35" height="48" fill="#0D1117"/>
+  <rect x="970" y="245" width="25" height="55" fill="#0D1117"/>
+  <rect x="1002" y="258" width="28" height="42" fill="#0D1117"/>
+  <rect x="1038" y="252" width="20" height="48" fill="#0D1117"/>
+  <rect x="1068" y="262" width="35" height="38" fill="#0D1117"/>
+  <rect x="1110" y="258" width="28" height="42" fill="#0D1117"/>
+  <rect x="1145" y="265" width="25" height="35" fill="#0D1117"/>
+  <rect x="1175" y="268" width="25" height="32" fill="#0D1117"/>
+  <rect x="0" y="298" width="1200" height="2" fill="#0D1117"/>
+  <rect class="w1" x="398" y="188" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.24"/>
+  <rect class="w2" x="406" y="200" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w3" x="398" y="215" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.13"/>
+  <rect class="w1" x="410" y="228" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.12"/>
+  <rect class="w2" x="398" y="245" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.27"/>
+  <rect class="w3" x="406" y="260" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.25"/>
+  <rect class="w1" x="402" y="275" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.32"/>
+  <rect class="w2" x="449" y="222" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w3" x="459" y="238" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.18"/>
+  <rect class="w1" x="451" y="255" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w2" x="462" y="270" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.12"/>
+  <rect class="w3" x="490" y="228" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.2"/>
+  <rect class="w1" x="500" y="245" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w2" x="492" y="265" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.11"/>
+  <rect class="w1" x="588" y="242" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.24"/>
+  <rect class="w3" x="602" y="238" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.21"/>
+  <rect class="w2" x="612" y="252" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.12"/>
+  <rect class="w1" x="596" y="262" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.23"/>
+  <rect class="w2" x="650" y="212" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.29"/>
+  <rect class="w3" x="660" y="232" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w1" x="652" y="255" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.29"/>
+  <rect class="w2" x="662" y="270" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.26"/>
+  <rect class="w3" x="696" y="228" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.15"/>
+  <rect class="w1" x="704" y="248" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w2" x="698" y="268" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.34"/>
+  <rect class="w1" x="92" y="258" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.15"/>
+  <rect class="w3" x="165" y="235" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w2" x="212" y="242" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.1"/>
+  <rect class="w1" x="352" y="252" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.3"/>
+  <rect class="w3" x="532" y="252" width="3" height="3" rx="0.5" fill="#ffffff" opacity="0.23"/>
+  <rect class="w2" x="738" y="258" width="2" height="2" rx="0.5" fill="#ffffff" opacity="0.29"/>
+  <rect class="w1" x="762" y="248" width="2" height="2" rx="0.5" fill="#ffffff" opacity="0.27"/>
+  <rect class="w3" x="835" y="255" width="2" height="2" rx="0.5" fill="#ffffff" opacity="0.21"/>
+  <rect class="w2" x="875" y="268" width="2" height="2" rx="0.5" fill="#ffffff" opacity="0.34"/>
+  <rect class="w1" x="942" y="268" width="2" height="2" rx="0.5" fill="#ffffff" opacity="0.16"/>
+</svg>
