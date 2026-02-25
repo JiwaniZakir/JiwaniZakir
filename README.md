@@ -1,6 +1,8 @@
 <p align="center">
-<img src="./assets/header.svg" alt="Zakir Jiwani — Philadelphia" width="100%"/>
+<img src="https://images.unsplash.com/photo-1619951007086-ab6ef9affbf1?w=1400&h=350&fit=crop&crop=center&q=80" alt="Philadelphia Skyline" width="100%" style="border-radius: 12px;"/>
 </p>
+
+<h1 align="center">Zakir Jiwani</h1>
 
 <p align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&repeat=true&width=600&height=30&lines=Building+autonomous+AI+systems;Founder+%40+The+Foundry+PHL;Drexel+University+CS" alt="Typing SVG" /></a>
