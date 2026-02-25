@@ -36,9 +36,41 @@
 
 ### ⚡ Tech Stack
 
-<p align="center">
-<img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=2&theme=github_dark&line1=python,Python,58A6FF;typescript,TypeScript,58A6FF;react,React,58A6FF;nextjs,Next.js,58A6FF;fastapi,FastAPI,58A6FF&line2=docker,Docker,58A6FF;postgresql,PostgreSQL,58A6FF;redis,Redis,58A6FF;pytorch,PyTorch,58A6FF;neo4j,Neo4j,58A6FF" alt="Tech Stack"/>
-</p>
+**Languages**
+<br/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+
+**AI / ML**
+<br/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+<img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
+
+**Backend**
+<br/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"/>
+
+**Data**
+<br/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+<img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white"/>
+
+**Frontend**
+<br/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
+
+**Infra**
+<br/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
 
 </td>
 <td width="45%" valign="top">
@@ -132,25 +164,6 @@
 
 <img src="https://github-contributor-stats.vercel.app/api?username=JiwaniZakir&theme=github_dark&hide_border=true&combine_all_yearly_contributions=true" width="100%"/>
 
-<br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JiwaniZakir&theme=github_dark" width="100%"/>
-
-</div>
-
-<br/>
-
-<p align="center"><img src="./assets/divider.svg" width="100%"/></p>
-
-<!-- ═══════════════════════════ TROPHIES + 3D GRAPH ═══════════════════════════ -->
-
-<div align="center">
-
-<img src="https://github-trophies.vercel.app/?username=JiwaniZakir&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&column=7" width="100%"/>
-
-<br/><br/>
-
-<img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
 
 </div>
 
