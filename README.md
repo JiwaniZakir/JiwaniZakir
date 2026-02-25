@@ -71,88 +71,31 @@
 
 <br/>
 
-<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ GITHUB ANALYTICS ═══════════════════════════════ -->
 
 <div align="center">
 
-### 🚀 What I've Built
+### 📊 GitHub Analytics
+
+<br/>
+
+<p>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&border_radius=12&count_private=true&icon_color=58A6FF&title_color=58A6FF&include_all_commits=true" height="180"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=JiwaniZakir&layout=compact&theme=github_dark&hide_border=true&border_radius=12&langs_count=8&title_color=58A6FF" height="180"/>
+</p>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JiwaniZakir&theme=github_dark" width="100%"/>
+
+<p>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JiwaniZakir&theme=github_dark" width="32%"/>
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JiwaniZakir&theme=github_dark" width="32%"/>
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=JiwaniZakir&theme=github_dark&utcOffset=-5" width="32%"/>
+</p>
 
 </div>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### [aegis](https://github.com/JiwaniZakir/aegis)
-Self-hosted personal intelligence platform. Aggregates 15+ data sources with RAG-powered insights and autonomous content generation.
-
-<img src="https://img.shields.io/github/stars/JiwaniZakir/aegis?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
-<img src="https://img.shields.io/github/forks/JiwaniZakir/aegis?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
-<br/>
-`Python` `FastAPI` `pgvector` `Celery`
-
-</td>
-<td width="50%" valign="top">
-
-#### [Partnerships_OS](https://github.com/JiwaniZakir/Partnerships_OS)
-Enterprise partnership intelligence with Neo4j knowledge graph, voice-first AI agent, and Notion-synced CRM.
-
-<img src="https://img.shields.io/github/stars/JiwaniZakir/Partnerships_OS?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
-<img src="https://img.shields.io/github/forks/JiwaniZakir/Partnerships_OS?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
-<br/>
-`TypeScript` `Neo4j` `Next.js` `React Native`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### [sentinel](https://github.com/JiwaniZakir/sentinel)
-AI-powered Slack bot for community management. GPT-4 research pipeline, automated onboarding, human-in-the-loop outreach.
-
-<img src="https://img.shields.io/github/stars/JiwaniZakir/sentinel?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
-<img src="https://img.shields.io/github/forks/JiwaniZakir/sentinel?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
-<br/>
-`Node.js` `Slack Bolt` `GPT-4` `Prisma`
-
-</td>
-<td width="50%" valign="top">
-
-#### [lattice](https://github.com/JiwaniZakir/lattice)
-Adaptive multi-agent orchestration with learned routing, hierarchical planning, and Z3 workflow verification.
-
-<img src="https://img.shields.io/github/stars/JiwaniZakir/lattice?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
-<img src="https://img.shields.io/github/forks/JiwaniZakir/lattice?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
-<br/>
-`Python` `PyTorch` `Z3` `OpenTelemetry`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### [evictionchatbot](https://github.com/JiwaniZakir/evictionchatbot)
-EVITA: AI legal assistant helping tenants facing eviction. Built with Philadelphia Legal Assistance.
-
-<img src="https://img.shields.io/github/stars/JiwaniZakir/evictionchatbot?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
-<img src="https://img.shields.io/github/forks/JiwaniZakir/evictionchatbot?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
-<br/>
-`React` `OpenAI` `Tailwind` `Vercel`
-
-</td>
-<td width="50%" valign="top">
-
-#### [spectra](https://github.com/JiwaniZakir/spectra)
-RAG evaluation toolkit implementing 12 retrieval strategies with A/B testing and Pareto-optimal pipeline selection.
-
-<img src="https://img.shields.io/github/stars/JiwaniZakir/spectra?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
-<img src="https://img.shields.io/github/forks/JiwaniZakir/spectra?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
-<br/>
-`Python` `FAISS` `Optuna` `Streamlit`
-
-</td>
-</tr>
-</table>
 
 <br/>
 
@@ -176,11 +119,31 @@ RAG evaluation toolkit implementing 12 retrieval strategies with A/B testing and
 
 <br/><br/>
 
-<img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117" alt="Followers"/>
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr&query=%24.total_count&label=Total%20PRs&color=58A6FF&style=for-the-badge&labelColor=0D1117&logo=github&logoColor=white" alt="Total PRs"/>
 &nbsp;
-<img src="https://img.shields.io/badge/PRs-Welcome-58A6FF?style=for-the-badge&labelColor=0D1117" alt="PRs Welcome"/>
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr%2Bis%3Amerged&query=%24.total_count&label=PRs%20Merged&color=238636&style=for-the-badge&labelColor=0D1117&logo=git-merge&logoColor=white" alt="PRs Merged"/>
 &nbsp;
-<img src="https://img.shields.io/github/stars/JiwaniZakir?affiliations=OWNER&style=for-the-badge&color=58A6FF&labelColor=0D1117&label=Total%20Stars" alt="Stars"/>
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Aissue&query=%24.total_count&label=Issues%20Opened&color=DA3633&style=for-the-badge&labelColor=0D1117&logo=github&logoColor=white" alt="Issues"/>
+&nbsp;
+<img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117&logo=github&logoColor=white" alt="Followers"/>
+
+<br/><br/>
+
+#### Repos I've Contributed To
+
+<img src="https://github-contributor-stats.vercel.app/api?username=JiwaniZakir&theme=github_dark&hide_border=true&combine_all_yearly_contributions=true" width="100%"/>
+
+<br/>
+
+#### Contribution Activity
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=JiwaniZakir&theme=github-dark&area=true&hide_border=true&custom_title=Contribution%20Activity&line=58A6FF&point=58A6FF&area_color=58A6FF" width="100%"/>
+
+<br/>
+
+#### Contribution Calendar
+
+<img src="https://ghchart.rshah.org/58A6FF/JiwaniZakir" alt="Contribution Heatmap" width="100%"/>
 
 <br/><br/>
 
@@ -191,6 +154,46 @@ RAG evaluation toolkit implementing 12 retrieval strategies with A/B testing and
 | 🕸️ **Graph** | Neo4j knowledge graphs, pgvector semantic search, relationship modeling |
 | 🛡️ **Security** | Zero-trust patterns, AES-256-GCM encryption, SOPS secrets management |
 | 🏗️ **Infra** | Docker orchestration, Traefik, Cloudflare Tunnels, GitHub Actions CI/CD |
+
+</div>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<br/>
+
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+
+<div align="center">
+
+### 🚀 What I've Built
+
+<br/>
+
+<a href="https://github.com/JiwaniZakir/aegis">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=aegis&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+</a>
+&nbsp;
+<a href="https://github.com/JiwaniZakir/Partnerships_OS">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=Partnerships_OS&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+</a>
+
+<a href="https://github.com/JiwaniZakir/sentinel">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=sentinel&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+</a>
+&nbsp;
+<a href="https://github.com/JiwaniZakir/lattice">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=lattice&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+</a>
+
+<a href="https://github.com/JiwaniZakir/evictionchatbot">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=evictionchatbot&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+</a>
+&nbsp;
+<a href="https://github.com/JiwaniZakir/spectra">
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=spectra&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+</a>
 
 </div>
 
