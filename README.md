@@ -1,8 +1,9 @@
-<h1 align="center">Zakir Jiwani</h1>
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Zakir%20Jiwani&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=32" width="100%"/>
+</p>
 
 <p align="center">
-Building autonomous AI systems that think, research, and act.<br/>
-Founder @ The Foundry PHL &nbsp;|&nbsp; Drexel University CS
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=600&height=30&lines=Building+autonomous+AI+systems;Founder+%40+The+Foundry+PHL;Drexel+University+CS" alt="Typing SVG" /></a>
 </p>
 
 <p align="center">
@@ -72,14 +73,18 @@ RAG evaluation toolkit implementing 12 retrieval strategies with A/B testing and
 
 ---
 
-### Technical Focus
+### Tech Stack
 
-**AI/ML Infrastructure** — Multi-agent orchestration, RAG pipelines, learned routing, embedding systems, LLM evaluation<br/>
-**Backend Systems** — FastAPI, Fastify, async task queues (Celery, BullMQ), event-driven architectures<br/>
-**Graph Intelligence** — Neo4j knowledge graphs, pgvector semantic search, relationship modeling<br/>
-**Security Architecture** — Zero-trust design, AES-256-GCM encryption, SOPS secrets management, SSH tunneling<br/>
-**Frontend & Mobile** — Next.js, React Native/Expo, real-time dashboards, D3.js visualization<br/>
-**Infrastructure** — Docker Compose, Traefik, Cloudflare Tunnels, GitHub Actions CI/CD, Turborepo monorepos
+<p align="center">
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=python,typescript,react,nextjs,fastapi,nodejs,docker,postgresql&theme=dark" alt="Tech Stack"/>
+</a>
+</p>
+<p align="center">
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=redis,neo4j,pytorch,tailwind,graphql,linux,git,github&theme=dark" alt="Tech Stack"/>
+</a>
+</p>
 
 ---
 
@@ -87,4 +92,22 @@ RAG evaluation toolkit implementing 12 retrieval strategies with A/B testing and
 <img src="https://github-readme-stats.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="165"/>
 &nbsp;&nbsp;
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=JiwaniZakir&theme=github-dark-blue&hide_border=true" height="165"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JiwaniZakir&layout=compact&theme=github_dark&hide_border=true&langs_count=8" height="165"/>
+</p>
+
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=JiwaniZakir&theme=algolia&no-frame=true&no-bg=true&column=7" width="100%"/>
+</p>
+
+<p align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=JiwaniZakir&theme=github-dark&area=true&hide_border=true" width="100%"/>
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/JiwaniZakir/JiwaniZakir/output/github-snake-dark.svg" alt="Snake animation" width="100%"/>
+</p>
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
 </p>
