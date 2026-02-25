@@ -18,7 +18,7 @@
 
 <br/>
 
-<!-- ═══════════════════════ ABOUT + CONTRIBUTIONS (TWO COLUMNS) ═══════════════════════ -->
+<!-- ═══════════════════════ ABOUT + STATS (TWO COLUMNS) ═══════════════════════ -->
 
 <table>
 <tr>
@@ -51,111 +51,21 @@
 </td>
 <td width="45%" valign="top">
 
-### 📈 Contributions
+### 📈 At a Glance
 
-<img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&count_private=true&icon_color=58A6FF&title_color=58A6FF&include_all_commits=true&rank_icon=percentile" width="100%"/>
 
 <br/>
 
-<p align="center">
-<img src="https://streak-stats.demolab.com/?user=JiwaniZakir&theme=github-dark-blue&hide_border=true&border_radius=8&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" width="100%"/>
-</p>
+<img src="https://streak-stats.demolab.com/?user=JiwaniZakir&theme=github-dark-blue&hide_border=true&border_radius=10&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" width="100%"/>
+
+<br/>
+
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=JiwaniZakir&layout=compact&theme=github_dark&hide_border=true&border_radius=10&langs_count=8&title_color=58A6FF" width="100%"/>
 
 </td>
 </tr>
 </table>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
-
-<!-- ═══════════════════════════════ GITHUB ANALYTICS ═══════════════════════════════ -->
-
-<div align="center">
-
-### 📊 GitHub Analytics
-
-<br/>
-
-<p>
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&border_radius=12&count_private=true&icon_color=58A6FF&title_color=58A6FF&include_all_commits=true" height="180"/>
-&nbsp;&nbsp;
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=JiwaniZakir&layout=compact&theme=github_dark&hide_border=true&border_radius=12&langs_count=8&title_color=58A6FF" height="180"/>
-</p>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JiwaniZakir&theme=github_dark" width="100%"/>
-
-<p>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JiwaniZakir&theme=github_dark" width="32%"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JiwaniZakir&theme=github_dark" width="32%"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=JiwaniZakir&theme=github_dark&utcOffset=-5" width="32%"/>
-</p>
-
-</div>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
-
-<!-- ═══════════════════════════ OPEN SOURCE ═══════════════════════════ -->
-
-<div align="center">
-
-### 🌐 Open Source Contributions
-
-<br/>
-
-<img src="https://img.shields.io/badge/Focus-AI%20%2F%20ML%20Infrastructure-58A6FF?style=for-the-badge&labelColor=0D1117" alt="AI/ML"/>
-&nbsp;
-<img src="https://img.shields.io/badge/Focus-Developer%20Tooling-58A6FF?style=for-the-badge&labelColor=0D1117" alt="Tooling"/>
-&nbsp;
-<img src="https://img.shields.io/badge/Focus-Security%20%26%20Infra-58A6FF?style=for-the-badge&labelColor=0D1117" alt="Security"/>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr&query=%24.total_count&label=Total%20PRs&color=58A6FF&style=for-the-badge&labelColor=0D1117&logo=github&logoColor=white" alt="Total PRs"/>
-&nbsp;
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr%2Bis%3Amerged&query=%24.total_count&label=PRs%20Merged&color=238636&style=for-the-badge&labelColor=0D1117&logo=git-merge&logoColor=white" alt="PRs Merged"/>
-&nbsp;
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Aissue&query=%24.total_count&label=Issues%20Opened&color=DA3633&style=for-the-badge&labelColor=0D1117&logo=github&logoColor=white" alt="Issues"/>
-&nbsp;
-<img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117&logo=github&logoColor=white" alt="Followers"/>
-
-<br/><br/>
-
-#### Repos I've Contributed To
-
-<img src="https://github-contributor-stats.vercel.app/api?username=JiwaniZakir&theme=github_dark&hide_border=true&combine_all_yearly_contributions=true" width="100%"/>
-
-<br/>
-
-#### Contribution Activity
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JiwaniZakir&theme=github-dark&area=true&hide_border=true&custom_title=Contribution%20Activity&line=58A6FF&point=58A6FF&area_color=58A6FF" width="100%"/>
-
-<br/>
-
-#### Contribution Calendar
-
-<img src="https://ghchart.rshah.org/58A6FF/JiwaniZakir" alt="Contribution Heatmap" width="100%"/>
-
-<br/><br/>
-
-| Domain | What I Contribute |
-|:------:|:-----------------|
-| 🤖 **AI/ML** | Multi-agent frameworks, RAG pipelines, LLM evaluation, embedding systems |
-| 🔧 **Backend** | FastAPI/Fastify services, async task queues, event-driven architectures |
-| 🕸️ **Graph** | Neo4j knowledge graphs, pgvector semantic search, relationship modeling |
-| 🛡️ **Security** | Zero-trust patterns, AES-256-GCM encryption, SOPS secrets management |
-| 🏗️ **Infra** | Docker orchestration, Traefik, Cloudflare Tunnels, GitHub Actions CI/CD |
-
-</div>
 
 <br/>
 
@@ -203,8 +113,62 @@
 
 <br/>
 
+<!-- ═══════════════════════════ OPEN SOURCE ═══════════════════════════ -->
+
+<div align="center">
+
+### 🌐 Open Source Contributions
+
+<br/>
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr&query=%24.total_count&label=Total%20PRs&color=58A6FF&style=for-the-badge&labelColor=0D1117&logo=git-pull-request&logoColor=white" alt="Total PRs"/>
+&nbsp;
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr%2Bis%3Amerged&query=%24.total_count&label=Merged&color=238636&style=for-the-badge&labelColor=0D1117&logo=git-merge&logoColor=white" alt="Merged"/>
+&nbsp;
+<img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117&logo=github&logoColor=white" alt="Followers"/>
+&nbsp;
+<img src="https://img.shields.io/github/stars/JiwaniZakir?affiliations=OWNER&style=for-the-badge&color=58A6FF&labelColor=0D1117&label=Stars&logo=github&logoColor=white" alt="Stars"/>
+
+<br/><br/>
+
+<img src="https://github-contributor-stats.vercel.app/api?username=JiwaniZakir&theme=github_dark&hide_border=true&combine_all_yearly_contributions=true" width="100%"/>
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JiwaniZakir&theme=github_dark" width="100%"/>
+
+<br/><br/>
+
+<table>
+<tr>
+<td align="center" width="20%">🤖<br/><strong>AI / ML</strong><br/><sub>Multi-agent systems<br/>RAG pipelines<br/>LLM evaluation</sub></td>
+<td align="center" width="20%">🔧<br/><strong>Backend</strong><br/><sub>FastAPI / Fastify<br/>Async task queues<br/>Event-driven arch</sub></td>
+<td align="center" width="20%">🕸️<br/><strong>Graph</strong><br/><sub>Neo4j knowledge graphs<br/>pgvector search<br/>Relationship modeling</sub></td>
+<td align="center" width="20%">🛡️<br/><strong>Security</strong><br/><sub>Zero-trust patterns<br/>AES-256-GCM<br/>SOPS secrets</sub></td>
+<td align="center" width="20%">🏗️<br/><strong>Infra</strong><br/><sub>Docker / Traefik<br/>Cloudflare Tunnels<br/>GitHub Actions CI</sub></td>
+</tr>
+</table>
+
+</div>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<br/>
+
+<!-- ═══════════════════════════ 3D CONTRIBUTION GRAPH ═══════════════════════════ -->
+
+<div align="center">
+
+<img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
+
+</div>
+
+<br/>
+
 <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 </p>
