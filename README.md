@@ -162,7 +162,10 @@
 
 <br/><br/>
 
-<img src="https://github-contributor-stats.vercel.app/api?username=JiwaniZakir&theme=github_dark&hide_border=true&combine_all_yearly_contributions=true" width="100%"/>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" width="100%">
+<img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Graph" width="100%"/>
+</picture>
 
 
 </div>
