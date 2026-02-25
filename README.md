@@ -14,11 +14,9 @@
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
-<br/>
-
-<!-- ═══════════════════════ ABOUT + STATS (TWO COLUMNS) ═══════════════════════ -->
+<!-- ═══════════════════════ ABOUT + STATS ═══════════════════════ -->
 
 <table>
 <tr>
@@ -38,14 +36,8 @@
 
 ### ⚡ Tech Stack
 
-<p>
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=python,typescript,react,nextjs,fastapi,nodejs,docker,postgresql&theme=dark&perline=8" alt="Stack"/>
-</a>
-<br/>
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=redis,pytorch,tailwind,graphql,linux,git,github,vscode&theme=dark&perline=8" alt="Stack"/>
-</a>
+<p align="center">
+<img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=2&theme=github_dark&line1=python,Python,58A6FF;typescript,TypeScript,58A6FF;react,React,58A6FF;nextjs,Next.js,58A6FF;fastapi,FastAPI,58A6FF&line2=docker,Docker,58A6FF;postgresql,PostgreSQL,58A6FF;redis,Redis,58A6FF;pytorch,PyTorch,58A6FF;neo4j,Neo4j,58A6FF" alt="Tech Stack"/>
 </p>
 
 </td>
@@ -69,11 +61,9 @@
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
-<br/>
-
-<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ MY PROJECTS ═══════════════════════════════ -->
 
 <div align="center">
 
@@ -109,9 +99,7 @@
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
+<p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
 <!-- ═══════════════════════════ OPEN SOURCE ═══════════════════════════ -->
 
@@ -121,6 +109,7 @@
 
 <br/>
 
+<p>
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr&query=%24.total_count&label=Total%20PRs&color=58A6FF&style=for-the-badge&labelColor=0D1117&logo=git-pull-request&logoColor=white" alt="Total PRs"/>
 &nbsp;
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr%2Bis%3Amerged&query=%24.total_count&label=Merged&color=238636&style=for-the-badge&labelColor=0D1117&logo=git-merge&logoColor=white" alt="Merged"/>
@@ -128,6 +117,16 @@
 <img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117&logo=github&logoColor=white" alt="Followers"/>
 &nbsp;
 <img src="https://img.shields.io/github/stars/JiwaniZakir?affiliations=OWNER&style=for-the-badge&color=58A6FF&labelColor=0D1117&label=Stars&logo=github&logoColor=white" alt="Stars"/>
+</p>
+
+<br/>
+
+<a href="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats?user_id=108548454" target="_blank">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=108548454&image_size=auto&color_scheme=dark" width="100%">
+<img src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=108548454&image_size=auto&color_scheme=light" width="100%"/>
+</picture>
+</a>
 
 <br/><br/>
 
@@ -137,29 +136,19 @@
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JiwaniZakir&theme=github_dark" width="100%"/>
 
-<br/><br/>
-
-<table>
-<tr>
-<td align="center" width="20%">🤖<br/><strong>AI / ML</strong><br/><sub>Multi-agent systems<br/>RAG pipelines<br/>LLM evaluation</sub></td>
-<td align="center" width="20%">🔧<br/><strong>Backend</strong><br/><sub>FastAPI / Fastify<br/>Async task queues<br/>Event-driven arch</sub></td>
-<td align="center" width="20%">🕸️<br/><strong>Graph</strong><br/><sub>Neo4j knowledge graphs<br/>pgvector search<br/>Relationship modeling</sub></td>
-<td align="center" width="20%">🛡️<br/><strong>Security</strong><br/><sub>Zero-trust patterns<br/>AES-256-GCM<br/>SOPS secrets</sub></td>
-<td align="center" width="20%">🏗️<br/><strong>Infra</strong><br/><sub>Docker / Traefik<br/>Cloudflare Tunnels<br/>GitHub Actions CI</sub></td>
-</tr>
-</table>
-
 </div>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
-<br/>
-
-<!-- ═══════════════════════════ 3D CONTRIBUTION GRAPH ═══════════════════════════ -->
+<!-- ═══════════════════════════ TROPHIES + 3D GRAPH ═══════════════════════════ -->
 
 <div align="center">
+
+<img src="https://github-trophies.vercel.app/?username=JiwaniZakir&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&column=7" width="100%"/>
+
+<br/><br/>
 
 <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
 
