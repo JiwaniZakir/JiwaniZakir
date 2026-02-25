@@ -1,9 +1,9 @@
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Zakir%20Jiwani&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=30&desc=&descAlignY=50" width="100%"/>
+<img src="./assets/header.svg" alt="Zakir Jiwani — Philadelphia" width="100%"/>
 </p>
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=650&height=35&lines=Building+autonomous+AI+systems;Founder+%40+The+Foundry+PHL;Drexel+University+CS" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&repeat=true&width=600&height=30&lines=Building+autonomous+AI+systems;Founder+%40+The+Foundry+PHL;Drexel+University+CS" alt="Typing SVG" /></a>
 </p>
 
 <p align="center">
@@ -14,102 +14,183 @@
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                          ABOUT ME                              -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<div align="center">
+<br/>
 
-## 🧠 About Me
+<!-- ═══════════════════════ ABOUT + CONTRIBUTIONS (TWO COLUMNS) ═══════════════════════ -->
 
-</div>
+<table>
+<tr>
+<td width="55%" valign="top">
 
-<p align="center">
-<img src="https://img.shields.io/badge/AI%20Systems-Autonomous%20multi--agent%20orchestration%20%26%20RAG%20pipelines-58A6FF?style=flat-square&labelColor=0D1117" alt="AI Systems"/>
-</p>
+### 🧠 About Me
 
-<div align="center">
+🤖 &nbsp; Building **autonomous AI systems** — multi-agent orchestration, RAG pipelines, and graph intelligence that run 24/7
 
-🤖 &nbsp; I build **autonomous AI systems** — multi-agent orchestration, RAG pipelines, and graph intelligence platforms that run 24/7 with no human in the loop
-
-🏗️ &nbsp; Building **[The Foundry PHL](https://thefoundryphl.com)** — an entrepreneurial nonprofit empowering young founders on the East Coast
+🏗️ &nbsp; Founder of **[The Foundry PHL](https://thefoundryphl.com)** — nonprofit empowering young founders on the East Coast
 
 🎓 &nbsp; Studying **Computer Science** at **Drexel University**
 
-🔬 &nbsp; Turning research papers (ReAct, Self-RAG, Constitutional AI) into **production services**
-
-</div>
+🔬 &nbsp; Shipping research to production — ReAct, Self-RAG, Constitutional AI
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+### ⚡ Tech Stack
+
+<p>
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=python,typescript,react,nextjs,fastapi,nodejs,docker,postgresql&theme=dark&perline=8" alt="Stack"/>
+</a>
+<br/>
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=redis,pytorch,tailwind,graphql,linux,git,github,vscode&theme=dark&perline=8" alt="Stack"/>
+</a>
+</p>
+
+</td>
+<td width="45%" valign="top">
+
+### 📈 Contributions
+
+<img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
 
 <br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                       MY PROJECTS                              -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 🚀 What I've Built
-
-</div>
-
-<div align="center">
-
-<a href="https://github.com/JiwaniZakir/aegis">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=JiwaniZakir&repo=aegis&theme=github_dark&hide_border=true&border_radius=12&show_owner=true" />
-</a>
-<a href="https://github.com/JiwaniZakir/Partnerships_OS">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=JiwaniZakir&repo=Partnerships_OS&theme=github_dark&hide_border=true&border_radius=12&show_owner=true" />
-</a>
-<a href="https://github.com/JiwaniZakir/sentinel">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=JiwaniZakir&repo=sentinel&theme=github_dark&hide_border=true&border_radius=12&show_owner=true" />
-</a>
-<a href="https://github.com/JiwaniZakir/lattice">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=JiwaniZakir&repo=lattice&theme=github_dark&hide_border=true&border_radius=12&show_owner=true" />
-</a>
-<a href="https://github.com/JiwaniZakir/evictionchatbot">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=JiwaniZakir&repo=evictionchatbot&theme=github_dark&hide_border=true&border_radius=12&show_owner=true" />
-</a>
-<a href="https://github.com/JiwaniZakir/spectra">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=JiwaniZakir&repo=spectra&theme=github_dark&hide_border=true&border_radius=12&show_owner=true" />
-</a>
-
-</div>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                     OPEN SOURCE                                -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 🌐 Open Source Contributions
-
-</div>
 
 <p align="center">
+<img src="https://streak-stats.demolab.com/?user=JiwaniZakir&theme=github-dark-blue&hide_border=true&border_radius=8&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" width="100%"/>
+</p>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<br/>
+
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+
+<div align="center">
+
+### 🚀 What I've Built
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### [aegis](https://github.com/JiwaniZakir/aegis)
+Self-hosted personal intelligence platform. Aggregates 15+ data sources with RAG-powered insights and autonomous content generation.
+
+<img src="https://img.shields.io/github/stars/JiwaniZakir/aegis?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
+<img src="https://img.shields.io/github/forks/JiwaniZakir/aegis?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
+<br/>
+`Python` `FastAPI` `pgvector` `Celery`
+
+</td>
+<td width="50%" valign="top">
+
+#### [Partnerships_OS](https://github.com/JiwaniZakir/Partnerships_OS)
+Enterprise partnership intelligence with Neo4j knowledge graph, voice-first AI agent, and Notion-synced CRM.
+
+<img src="https://img.shields.io/github/stars/JiwaniZakir/Partnerships_OS?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
+<img src="https://img.shields.io/github/forks/JiwaniZakir/Partnerships_OS?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
+<br/>
+`TypeScript` `Neo4j` `Next.js` `React Native`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [sentinel](https://github.com/JiwaniZakir/sentinel)
+AI-powered Slack bot for community management. GPT-4 research pipeline, automated onboarding, human-in-the-loop outreach.
+
+<img src="https://img.shields.io/github/stars/JiwaniZakir/sentinel?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
+<img src="https://img.shields.io/github/forks/JiwaniZakir/sentinel?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
+<br/>
+`Node.js` `Slack Bolt` `GPT-4` `Prisma`
+
+</td>
+<td width="50%" valign="top">
+
+#### [lattice](https://github.com/JiwaniZakir/lattice)
+Adaptive multi-agent orchestration with learned routing, hierarchical planning, and Z3 workflow verification.
+
+<img src="https://img.shields.io/github/stars/JiwaniZakir/lattice?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
+<img src="https://img.shields.io/github/forks/JiwaniZakir/lattice?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
+<br/>
+`Python` `PyTorch` `Z3` `OpenTelemetry`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [evictionchatbot](https://github.com/JiwaniZakir/evictionchatbot)
+EVITA: AI legal assistant helping tenants facing eviction. Built with Philadelphia Legal Assistance.
+
+<img src="https://img.shields.io/github/stars/JiwaniZakir/evictionchatbot?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
+<img src="https://img.shields.io/github/forks/JiwaniZakir/evictionchatbot?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
+<br/>
+`React` `OpenAI` `Tailwind` `Vercel`
+
+</td>
+<td width="50%" valign="top">
+
+#### [spectra](https://github.com/JiwaniZakir/spectra)
+RAG evaluation toolkit implementing 12 retrieval strategies with A/B testing and Pareto-optimal pipeline selection.
+
+<img src="https://img.shields.io/github/stars/JiwaniZakir/spectra?style=flat-square&color=58A6FF&labelColor=0D1117" alt="stars"/>
+<img src="https://img.shields.io/github/forks/JiwaniZakir/spectra?style=flat-square&color=58A6FF&labelColor=0D1117" alt="forks"/>
+<br/>
+`Python` `FAISS` `Optuna` `Streamlit`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<br/>
+
+<!-- ═══════════════════════════ OPEN SOURCE ═══════════════════════════ -->
+
+<div align="center">
+
+### 🌐 Open Source Contributions
+
+<br/>
+
+<img src="https://img.shields.io/badge/Focus-AI%20%2F%20ML%20Infrastructure-58A6FF?style=for-the-badge&labelColor=0D1117" alt="AI/ML"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Focus-Developer%20Tooling-58A6FF?style=for-the-badge&labelColor=0D1117" alt="Tooling"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Focus-Security%20%26%20Infra-58A6FF?style=for-the-badge&labelColor=0D1117" alt="Security"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117" alt="Followers"/>
+&nbsp;
 <img src="https://img.shields.io/badge/PRs-Welcome-58A6FF?style=for-the-badge&labelColor=0D1117" alt="PRs Welcome"/>
 &nbsp;
-<img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117" alt="Followers"/>
-</p>
+<img src="https://img.shields.io/github/stars/JiwaniZakir?affiliations=OWNER&style=for-the-badge&color=58A6FF&labelColor=0D1117&label=Total%20Stars" alt="Stars"/>
 
-<div align="center">
+<br/><br/>
 
-<!-- Add pinned open source contribution repos here as you contribute -->
-
-| Area | Focus |
-|:----:|:------|
-| 🤖 **AI/ML** | Multi-agent systems, RAG pipelines, LLM evaluation frameworks |
-| 🔧 **Infra** | Docker orchestration, CI/CD pipelines, IaC tooling |
-| 🛡️ **Security** | Zero-trust architectures, encryption tooling |
+| Domain | What I Contribute |
+|:------:|:-----------------|
+| 🤖 **AI/ML** | Multi-agent frameworks, RAG pipelines, LLM evaluation, embedding systems |
+| 🔧 **Backend** | FastAPI/Fastify services, async task queues, event-driven architectures |
+| 🕸️ **Graph** | Neo4j knowledge graphs, pgvector semantic search, relationship modeling |
+| 🛡️ **Security** | Zero-trust patterns, AES-256-GCM encryption, SOPS secrets management |
+| 🏗️ **Infra** | Docker orchestration, Traefik, Cloudflare Tunnels, GitHub Actions CI/CD |
 
 </div>
 
@@ -119,102 +200,7 @@
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                       TECH STACK                               -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## ⚡ Tech Stack
-
-</div>
-
-<p align="center">
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=python,typescript,react,nextjs,fastapi,nodejs,docker,postgresql&theme=dark&perline=8" alt="Tech Stack"/>
-</a>
-</p>
-<p align="center">
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=redis,pytorch,tailwind,graphql,linux,git,github,vscode&theme=dark&perline=8" alt="Tech Stack"/>
-</a>
-</p>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                      GITHUB STATS                              -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 📊 GitHub Stats
-
-</div>
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&border_radius=12&count_private=true&icon_color=58A6FF&title_color=58A6FF" height="180"/>
-&nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JiwaniZakir&layout=compact&theme=github_dark&hide_border=true&border_radius=12&langs_count=8&title_color=58A6FF" height="180"/>
-</p>
-
-<p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=JiwaniZakir&theme=github-dark-blue&hide_border=true&border_radius=12&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" width="60%"/>
-</p>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                       TROPHIES                                 -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=JiwaniZakir&theme=algolia&no-frame=true&no-bg=true&column=7" width="100%"/>
-</p>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                   3D CONTRIBUTION GRAPH                        -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 📈 Contribution Graph
-
-</div>
-
-<p align="center">
-<img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
-</p>
-
-<p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JiwaniZakir&theme=github-dark&area=true&hide_border=true&custom_title=Contribution%20Activity&line=58A6FF&point=58A6FF&area_color=58A6FF" width="100%"/>
-</p>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                    CONTRIBUTION SNAKE                          -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/JiwaniZakir/JiwaniZakir/output/github-snake-dark.svg" alt="Snake animation" width="100%"/>
-</p>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                         FOOTER                                 -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
