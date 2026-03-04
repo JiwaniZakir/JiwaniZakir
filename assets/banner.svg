@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2980b9"/>
-      <stop offset="50%" stop-color="#5dade2"/>
-      <stop offset="100%" stop-color="#aed6f1"/>
+      <stop offset="0%" stop-color="#131322"/>
+      <stop offset="30%" stop-color="#902a20"/>
+      <stop offset="60%" stop-color="#ac5e19"/>
+      <stop offset="100%" stop-color="#bdb09c"/>
     </linearGradient>
     <linearGradient id="cityGlow" x1="0%" y1="100%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.1"/>
@@ -46,16 +47,29 @@
   <rect width="1200" height="300" fill="url(#sky)"/>
   <ellipse cx="600" cy="300" rx="550" ry="80" fill="url(#cityGlow)"/>
 
-  <circle cx="950" cy="60" r="30" fill="#f9d71c" opacity="0.9"/>
-  <circle cx="950" cy="60" r="36" fill="#f9d71c" opacity="0.15"/>
+  <circle cx="600" cy="260" r="35" fill="#e74c3c" opacity="0.7"/>
+  <circle cx="600" cy="260" r="50" fill="#e74c3c" opacity="0.12"/>
 
-
+  <g opacity="0.3" class="cloud1">
+    <ellipse cx="180" cy="55" rx="55" ry="18" fill="#8B949E"/>
+    <ellipse cx="215" cy="48" rx="40" ry="16" fill="#8B949E"/>
+    <ellipse cx="155" cy="52" rx="32" ry="14" fill="#8B949E"/>
+  </g>
+  <g opacity="0.22" class="cloud2">
+    <ellipse cx="750" cy="40" rx="48" ry="16" fill="#8B949E"/>
+    <ellipse cx="780" cy="34" rx="35" ry="14" fill="#8B949E"/>
+    <ellipse cx="725" cy="37" rx="28" ry="12" fill="#8B949E"/>
+  </g>
+  <g opacity="0.18" class="cloud1">
+    <ellipse cx="1020" cy="60" rx="42" ry="14" fill="#8B949E"/>
+    <ellipse cx="1045" cy="55" rx="30" ry="12" fill="#8B949E"/>
+  </g>
 
 
   <text class="name-text" x="600" y="120" text-anchor="middle">Zakir Jiwani</text>
   <text class="sub-text" x="600" y="148" text-anchor="middle">PHILADELPHIA, PA</text>
-  <text class="weather-text" x="1175" y="18" text-anchor="end">38F / Clear Sky</text>
-  <text class="weather-text" x="1175" y="32" text-anchor="end">9:57 AM ET</text>
+  <text class="weather-text" x="1175" y="18" text-anchor="end">45F / Partly Cloudy</text>
+  <text class="weather-text" x="1175" y="32" text-anchor="end">6:53 PM ET</text>
 
   <rect x="0" y="242" width="40" height="58" fill="#0D1117"/>
   <rect x="45" y="252" width="30" height="48" fill="#0D1117"/>
