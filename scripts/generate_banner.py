@@ -13,15 +13,59 @@ TIMEZONE = "America/New_York"
 LAT = 39.9526
 LON = -75.1652
 
+# WMO weather codes → (main category, description)
+WMO_CODES = {
+    0: ("Clear", "clear sky"),
+    1: ("Clear", "mainly clear"),
+    2: ("Clouds", "partly cloudy"),
+    3: ("Clouds", "overcast"),
+    45: ("Fog", "fog"),
+    48: ("Fog", "depositing rime fog"),
+    51: ("Drizzle", "light drizzle"),
+    53: ("Drizzle", "moderate drizzle"),
+    55: ("Drizzle", "dense drizzle"),
+    56: ("Drizzle", "freezing drizzle"),
+    57: ("Drizzle", "dense freezing drizzle"),
+    61: ("Rain", "slight rain"),
+    63: ("Rain", "moderate rain"),
+    65: ("Rain", "heavy rain"),
+    66: ("Rain", "freezing rain"),
+    67: ("Rain", "heavy freezing rain"),
+    71: ("Snow", "slight snow"),
+    73: ("Snow", "moderate snow"),
+    75: ("Snow", "heavy snow"),
+    77: ("Snow", "snow grains"),
+    80: ("Rain", "slight rain showers"),
+    81: ("Rain", "moderate rain showers"),
+    82: ("Rain", "violent rain showers"),
+    85: ("Snow", "slight snow showers"),
+    86: ("Snow", "heavy snow showers"),
+    95: ("Thunderstorm", "thunderstorm"),
+    96: ("Thunderstorm", "thunderstorm with slight hail"),
+    99: ("Thunderstorm", "thunderstorm with heavy hail"),
+}
 
-def get_weather(api_key):
+
+def get_weather():
+    """Fetch current weather from Open-Meteo (free, no API key needed)."""
     url = (
-        f"https://api.openweathermap.org/data/2.5/weather"
-        f"?lat={LAT}&lon={LON}&appid={api_key}&units=imperial"
+        f"https://api.open-meteo.com/v1/forecast"
+        f"?latitude={LAT}&longitude={LON}"
+        f"&current=temperature_2m,apparent_temperature,weather_code"
+        f"&temperature_unit=fahrenheit"
     )
     resp = requests.get(url, timeout=10)
     resp.raise_for_status()
-    return resp.json()
+    data = resp.json()["current"]
+    code = data["weather_code"]
+    main, desc = WMO_CODES.get(code, ("Clear", "clear sky"))
+    return {
+        "weather": [{"main": main, "description": desc}],
+        "main": {
+            "temp": data["temperature_2m"],
+            "feels_like": data["apparent_temperature"],
+        },
+    }
 
 
 def get_time_period(hour):
@@ -320,11 +364,7 @@ def generate_svg(weather_data, now):
 
 
 def main():
-    api_key = os.environ.get("OPENWEATHER_API_KEY")
-    if not api_key:
-        raise SystemExit("OPENWEATHER_API_KEY environment variable required")
-
-    weather = get_weather(api_key)
+    weather = get_weather()
     now = datetime.now(ZoneInfo(TIMEZONE))
     svg = generate_svg(weather, now)
 

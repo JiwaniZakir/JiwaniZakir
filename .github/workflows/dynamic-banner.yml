@@ -22,8 +22,6 @@ jobs:
         run: pip install requests
 
       - name: Generate banner
-        env:
-          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
         run: python scripts/generate_banner.py
 
       - name: Commit and push
