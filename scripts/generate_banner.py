@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate a dynamic Philadelphia skyline SVG based on current weather and time."""
+"""Generate a dynamic Philadelphia skyline SVG based on current weather and time.
+
+Features a multi-layered 3D skyline with recognizable Philly landmarks,
+atmospheric perspective, water reflections, and dynamic weather/lighting.
+"""
 
 import os
 import random
@@ -12,6 +16,7 @@ HEIGHT = 300
 TIMEZONE = "America/New_York"
 LAT = 39.9526
 LON = -75.1652
+WATER_Y = 255  # where the river starts
 
 # WMO weather codes → (main category, description)
 WMO_CODES = {
@@ -90,6 +95,16 @@ def darken(hex_color, factor):
     return f"#{min(r,255):02x}{min(g,255):02x}{min(b,255):02x}"
 
 
+def lighten(hex_color, factor):
+    r = int(hex_color[1:3], 16)
+    g = int(hex_color[3:5], 16)
+    b = int(hex_color[5:7], 16)
+    r = int(r + (255 - r) * factor)
+    g = int(g + (255 - g) * factor)
+    b = int(b + (255 - b) * factor)
+    return f"#{min(r,255):02x}{min(g,255):02x}{min(b,255):02x}"
+
+
 def sky_gradient(period, weather):
     palettes = {
         "night":   [("#050B18", 0), ("#0B1628", 40), ("#162447", 100)],
@@ -109,55 +124,193 @@ def sky_gradient(period, weather):
     return colors
 
 
+def building_colors(period):
+    """Return (base_dark, base_mid, base_light, glass, highlight) for buildings."""
+    if period in ("night", "dusk"):
+        return ("#0a0e17", "#111827", "#1a2234", "#0d1525", "#1e293b")
+    elif period == "dawn":
+        return ("#1a1520", "#251e2a", "#2f2535", "#1e1828", "#3d2f45")
+    elif period == "sunset":
+        return ("#1a1015", "#2a1820", "#35202a", "#201018", "#452838")
+    elif period == "morning":
+        return ("#1a2a3a", "#253545", "#304050", "#1e2e3e", "#3a4a5a")
+    else:  # day
+        return ("#1e2d3d", "#2a3a4a", "#354555", "#243444", "#405060")
+
+
+def render_defs(period, weather_main, gradient_stops):
+    """Render all SVG defs: gradients, filters, clip paths."""
+    bc = building_colors(period)
+    is_night = period in ("night", "dusk", "dawn")
+
+    # Glass reflection color varies by time
+    glass_highlight = "#4a6a8a" if not is_night else "#1a2a4a"
+    glass_top = "#ffffff" if not is_night else "#3a5a7a"
+
+    # Window glow color
+    win_warm = "#ffd166" if is_night else "#ffffff"
+    win_cool = "#58A6FF" if is_night else "#e0e8f0"
+
+    return f"""  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+{gradient_stops}
+    </linearGradient>
+
+    <!-- Building face gradients (3D lighting - light from right) -->
+    <linearGradient id="bldgFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="{bc[2]}"/>
+      <stop offset="100%" stop-color="{bc[0]}"/>
+    </linearGradient>
+    <linearGradient id="bldgLeft" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="{bc[1]}"/>
+      <stop offset="100%" stop-color="{bc[0]}"/>
+    </linearGradient>
+    <linearGradient id="bldgRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{bc[1]}"/>
+      <stop offset="100%" stop-color="{bc[2]}"/>
+    </linearGradient>
+
+    <!-- Glass curtain wall gradient -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="{glass_top}" stop-opacity="0.08"/>
+      <stop offset="40%" stop-color="{glass_highlight}" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="{glass_highlight}" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Atmospheric haze for background layer -->
+    <linearGradient id="haze" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="url(#sky)" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="url(#sky)" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Water gradient -->
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="{bc[0]}" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#0a1628" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#050b14" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- City glow (light pollution) -->
+    <radialGradient id="cityGlow" cx="50%" cy="85%" r="60%">
+      <stop offset="0%" stop-color="{'#58A6FF' if is_night else '#ffecd2'}" stop-opacity="{'0.15' if is_night else '0.08'}"/>
+      <stop offset="100%" stop-color="{'#58A6FF' if is_night else '#ffecd2'}" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Warm window glow -->
+    <radialGradient id="winGlow">
+      <stop offset="0%" stop-color="{win_warm}" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="{win_warm}" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gaussian blur for reflections -->
+    <filter id="waterBlur">
+      <feGaussianBlur stdDeviation="2 1"/>
+    </filter>
+    <filter id="glowSoft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <!-- Clip to banner area -->
+    <clipPath id="bannerClip">
+      <rect width="{WIDTH}" height="{HEIGHT}"/>
+    </clipPath>
+
+    <style>
+      @keyframes twinkle1 {{ 0%,100% {{ opacity: 0.2; }} 50% {{ opacity: 1; }} }}
+      @keyframes twinkle2 {{ 0%,100% {{ opacity: 0.5; }} 50% {{ opacity: 0.9; }} }}
+      @keyframes twinkle3 {{ 0%,100% {{ opacity: 0.1; }} 50% {{ opacity: 0.8; }} }}
+      @keyframes windowPulse {{ 0%,100% {{ opacity: 0.3; }} 50% {{ opacity: 0.9; }} }}
+      @keyframes windowFlicker {{ 0%,45% {{ opacity: 0.8; }} 50% {{ opacity: 0.2; }} 55%,100% {{ opacity: 0.8; }} }}
+      @keyframes cloudDrift {{ 0% {{ transform: translateX(0); }} 100% {{ transform: translateX(30px); }} }}
+      @keyframes waterShimmer {{ 0%,100% {{ opacity: 0.3; }} 50% {{ opacity: 0.6; }} }}
+      @keyframes fadeIn {{ 0% {{ opacity: 0; transform: translateY(5px); }} 100% {{ opacity: 1; transform: translateY(0); }} }}
+      .s1 {{ animation: twinkle1 3s ease-in-out infinite; }}
+      .s2 {{ animation: twinkle2 2.5s ease-in-out infinite 0.8s; }}
+      .s3 {{ animation: twinkle3 4s ease-in-out infinite 1.5s; }}
+      .s4 {{ animation: twinkle1 3.5s ease-in-out infinite 2s; }}
+      .s5 {{ animation: twinkle2 2s ease-in-out infinite 0.3s; }}
+      .wp {{ animation: windowPulse 4s ease-in-out infinite; }}
+      .wf {{ animation: windowFlicker 8s ease-in-out infinite; }}
+      .cloud1 {{ animation: cloudDrift 20s ease-in-out infinite alternate; }}
+      .cloud2 {{ animation: cloudDrift 25s ease-in-out infinite alternate-reverse; }}
+      .ws {{ animation: waterShimmer 3s ease-in-out infinite; }}
+      .name-text {{
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 48px; font-weight: 700; fill: #FFFFFF;
+        filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+        animation: fadeIn 2s ease-out;
+      }}
+      .sub-text {{
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 12px; font-weight: 400; fill: #58A6FF;
+        letter-spacing: 6px;
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.4));
+        animation: fadeIn 3s ease-out;
+      }}
+      .weather-text {{
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 10px; fill: #8B949E; letter-spacing: 1.5px;
+        filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+      }}
+    </style>
+  </defs>"""
+
+
 def render_stars(period):
     if period not in ("night", "dusk", "dawn"):
         return ""
     random.seed(42)
-    count = {"night": 30, "dusk": 18, "dawn": 10}[period]
+    count = {"night": 40, "dusk": 20, "dawn": 12}[period]
     base_op = {"night": 0.8, "dusk": 0.5, "dawn": 0.3}[period]
     lines = []
     for i in range(count):
         x = random.randint(20, WIDTH - 20)
-        y = random.randint(8, 130)
-        r = round(random.uniform(0.5, 1.5), 1)
+        y = random.randint(5, 140)
+        r = round(random.uniform(0.4, 1.8), 1)
         cls = f"s{(i % 5) + 1}"
-        lines.append(f'  <circle class="{cls}" cx="{x}" cy="{y}" r="{r}" fill="#fff" opacity="{base_op}"/>')
+        lines.append(
+            f'  <circle class="{cls}" cx="{x}" cy="{y}" r="{r}" fill="#fff" opacity="{base_op}"/>'
+        )
     return "\n".join(lines)
 
 
 def render_clouds(weather):
     if weather != "Clouds":
         return ""
-    return """  <g opacity="0.3" class="cloud1">
-    <ellipse cx="180" cy="55" rx="55" ry="18" fill="#8B949E"/>
-    <ellipse cx="215" cy="48" rx="40" ry="16" fill="#8B949E"/>
-    <ellipse cx="155" cy="52" rx="32" ry="14" fill="#8B949E"/>
+    return """  <g opacity="0.25" class="cloud1">
+    <ellipse cx="160" cy="50" rx="60" ry="16" fill="#6B7585"/>
+    <ellipse cx="200" cy="42" rx="45" ry="14" fill="#7B8595"/>
+    <ellipse cx="130" cy="47" rx="35" ry="12" fill="#6B7585"/>
+    <ellipse cx="175" cy="38" rx="30" ry="10" fill="#8B959E"/>
   </g>
-  <g opacity="0.22" class="cloud2">
-    <ellipse cx="750" cy="40" rx="48" ry="16" fill="#8B949E"/>
-    <ellipse cx="780" cy="34" rx="35" ry="14" fill="#8B949E"/>
-    <ellipse cx="725" cy="37" rx="28" ry="12" fill="#8B949E"/>
+  <g opacity="0.18" class="cloud2">
+    <ellipse cx="780" cy="35" rx="55" ry="14" fill="#6B7585"/>
+    <ellipse cx="815" cy="28" rx="40" ry="12" fill="#7B8595"/>
+    <ellipse cx="755" cy="32" rx="30" ry="10" fill="#6B7585"/>
   </g>
-  <g opacity="0.18" class="cloud1">
-    <ellipse cx="1020" cy="60" rx="42" ry="14" fill="#8B949E"/>
-    <ellipse cx="1045" cy="55" rx="30" ry="12" fill="#8B949E"/>
+  <g opacity="0.15" class="cloud1">
+    <ellipse cx="1050" cy="55" rx="45" ry="12" fill="#6B7585"/>
+    <ellipse cx="1080" cy="49" rx="32" ry="10" fill="#7B8595"/>
   </g>"""
 
 
 def render_rain():
     random.seed(789)
     lines = []
-    for _ in range(40):
+    for _ in range(50):
         x = random.randint(0, WIDTH)
         y = random.randint(0, HEIGHT)
-        length = random.randint(10, 22)
+        length = random.randint(10, 25)
         delay = round(random.uniform(0, 1.5), 2)
-        op = round(random.uniform(0.2, 0.5), 2)
+        op = round(random.uniform(0.15, 0.4), 2)
         lines.append(
             f'  <line x1="{x}" y1="{y}" x2="{x - 3}" y2="{y + length}" '
-            f'stroke="#58A6FF" stroke-width="1" opacity="{op}">'
-            f'<animate attributeName="y1" from="-20" to="{HEIGHT}" dur="1s" begin="{delay}s" repeatCount="indefinite"/>'
-            f'<animate attributeName="y2" from="{-20 + length}" to="{HEIGHT + length}" dur="1s" begin="{delay}s" repeatCount="indefinite"/>'
+            f'stroke="#58A6FF" stroke-width="0.8" opacity="{op}">'
+            f'<animate attributeName="y1" from="-20" to="{HEIGHT}" dur="0.8s" begin="{delay}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="y2" from="{-20 + length}" to="{HEIGHT + length}" dur="0.8s" begin="{delay}s" repeatCount="indefinite"/>'
             f'</line>'
         )
     return "\n".join(lines)
@@ -166,14 +319,14 @@ def render_rain():
 def render_snow():
     random.seed(101)
     lines = []
-    for _ in range(30):
+    for _ in range(35):
         x = random.randint(0, WIDTH)
         y = random.randint(0, HEIGHT)
-        r = round(random.uniform(1, 3), 1)
+        r = round(random.uniform(0.8, 2.5), 1)
         delay = round(random.uniform(0, 3), 2)
-        drift = random.randint(-15, 15)
+        drift = random.randint(-20, 20)
         lines.append(
-            f'  <circle cx="{x}" cy="{y}" r="{r}" fill="white" opacity="0.6">'
+            f'  <circle cx="{x}" cy="{y}" r="{r}" fill="white" opacity="0.5">'
             f'<animate attributeName="cy" from="-10" to="{HEIGHT + 10}" dur="4s" begin="{delay}s" repeatCount="indefinite"/>'
             f'<animate attributeName="cx" values="{x};{x + drift};{x}" dur="4s" begin="{delay}s" repeatCount="indefinite"/>'
             f'</circle>'
@@ -182,96 +335,377 @@ def render_snow():
 
 
 def render_sun_moon(period):
-    if period == "day" or period == "morning":
+    if period in ("day", "morning"):
         return (
-            '  <circle cx="950" cy="60" r="30" fill="#f9d71c" opacity="0.9"/>\n'
-            '  <circle cx="950" cy="60" r="36" fill="#f9d71c" opacity="0.15"/>'
+            '  <circle cx="980" cy="55" r="28" fill="#f9d71c" opacity="0.9"/>\n'
+            '  <circle cx="980" cy="55" r="40" fill="#f9d71c" opacity="0.1" filter="url(#glowStrong)"/>\n'
+            '  <circle cx="980" cy="55" r="55" fill="#f9d71c" opacity="0.04" filter="url(#glowStrong)"/>'
         )
     elif period == "night":
         return (
-            '  <circle cx="980" cy="50" r="18" fill="#e8e8e8" opacity="0.85"/>\n'
-            '  <circle cx="972" cy="44" r="16" fill="url(#sky)" opacity="0.8"/>'
+            '  <circle cx="1000" cy="45" r="16" fill="#e8e8e8" opacity="0.85"/>\n'
+            '  <circle cx="993" cy="40" r="14" fill="url(#sky)" opacity="0.8"/>\n'
+            '  <circle cx="1000" cy="45" r="25" fill="#e8e8e8" opacity="0.05" filter="url(#glowSoft)"/>'
         )
     elif period in ("sunset", "dawn"):
         color = "#f5a623" if period == "dawn" else "#e74c3c"
         return (
-            f'  <circle cx="600" cy="260" r="35" fill="{color}" opacity="0.7"/>\n'
-            f'  <circle cx="600" cy="260" r="50" fill="{color}" opacity="0.12"/>'
+            f'  <circle cx="600" cy="240" r="30" fill="{color}" opacity="0.7"/>\n'
+            f'  <circle cx="600" cy="240" r="50" fill="{color}" opacity="0.15" filter="url(#glowStrong)"/>\n'
+            f'  <circle cx="600" cy="240" r="80" fill="{color}" opacity="0.05" filter="url(#glowStrong)"/>'
         )
     return ""
 
 
-SKYLINE = """  <rect x="0" y="242" width="40" height="58" fill="#0D1117"/>
-  <rect x="45" y="252" width="30" height="48" fill="#0D1117"/>
-  <rect x="80" y="238" width="35" height="62" fill="#0D1117"/>
-  <rect x="120" y="248" width="25" height="52" fill="#0D1117"/>
-  <rect x="155" y="212" width="28" height="88" fill="#0D1117"/>
-  <rect x="150" y="210" width="38" height="4" fill="#0D1117"/>
-  <rect x="200" y="218" width="35" height="82" fill="#0D1117"/>
-  <ellipse cx="217" cy="218" rx="17.5" ry="7" fill="#0D1117"/>
-  <rect x="248" y="258" width="55" height="42" fill="#0D1117"/>
-  <rect x="252" y="254" width="47" height="6" fill="#0D1117"/>
-  <rect x="315" y="242" width="25" height="58" fill="#0D1117"/>
-  <rect x="345" y="232" width="30" height="68" fill="#0D1117"/>
-  <rect x="390" y="178" width="30" height="122" fill="#0D1117"/>
-  <rect x="385" y="175" width="40" height="5" fill="#0D1117"/>
-  <rect x="403" y="168" width="4" height="9" fill="#0D1117"/>
-  <rect x="440" y="192" width="32" height="108" fill="#0D1117"/>
-  <polygon points="456,192 440,212 472,212" fill="#0D1117"/>
-  <rect x="454" y="178" width="4" height="16" fill="#0D1117"/>
-  <rect x="482" y="202" width="28" height="98" fill="#0D1117"/>
-  <polygon points="496,202 482,218 510,218" fill="#0D1117"/>
-  <rect x="494" y="192" width="4" height="12" fill="#0D1117"/>
-  <rect x="518" y="235" width="22" height="65" fill="#0D1117"/>
-  <rect x="546" y="228" width="20" height="72" fill="#0D1117"/>
-  <rect x="578" y="222" width="50" height="78" fill="#0D1117"/>
-  <rect x="593" y="202" width="20" height="24" fill="#0D1117"/>
-  <rect x="600" y="188" width="6" height="16" fill="#0D1117"/>
-  <rect x="602" y="182" width="2" height="8" fill="#0D1117"/>
-  <rect x="642" y="198" width="30" height="102" fill="#0D1117"/>
-  <rect x="637" y="195" width="40" height="5" fill="#0D1117"/>
-  <rect x="688" y="212" width="28" height="88" fill="#0D1117"/>
-  <rect x="724" y="238" width="22" height="62" fill="#0D1117"/>
-  <rect x="752" y="228" width="30" height="72" fill="#0D1117"/>
-  <rect x="790" y="242" width="25" height="58" fill="#0D1117"/>
-  <rect x="822" y="235" width="32" height="65" fill="#0D1117"/>
-  <rect x="862" y="248" width="28" height="52" fill="#0D1117"/>
-  <rect x="898" y="238" width="22" height="62" fill="#0D1117"/>
-  <rect x="928" y="252" width="35" height="48" fill="#0D1117"/>
-  <rect x="970" y="245" width="25" height="55" fill="#0D1117"/>
-  <rect x="1002" y="258" width="28" height="42" fill="#0D1117"/>
-  <rect x="1038" y="252" width="20" height="48" fill="#0D1117"/>
-  <rect x="1068" y="262" width="35" height="38" fill="#0D1117"/>
-  <rect x="1110" y="258" width="28" height="42" fill="#0D1117"/>
-  <rect x="1145" y="265" width="25" height="35" fill="#0D1117"/>
-  <rect x="1175" y="268" width="25" height="32" fill="#0D1117"/>
-  <rect x="0" y="298" width="1200" height="2" fill="#0D1117"/>"""
+# ---------------------------------------------------------------------------
+# 3D SKYLINE — Three depth layers with Philly landmarks
+# ---------------------------------------------------------------------------
+
+def _building(x, w, top, base, fill, side_fill=None, side_w=4, details=""):
+    """Render a building with front face, optional right side for 3D, and details."""
+    h = base - top
+    parts = [f'  <rect x="{x}" y="{top}" width="{w}" height="{h}" fill="{fill}"/>']
+    # Right side face for 3D depth
+    if side_fill:
+        parts.append(
+            f'  <polygon points="{x + w},{top} {x + w + side_w},{top - 3} '
+            f'{x + w + side_w},{base - 3} {x + w},{base}" fill="{side_fill}" opacity="0.6"/>'
+        )
+    # Glass overlay
+    parts.append(f'  <rect x="{x}" y="{top}" width="{w}" height="{h}" fill="url(#glass)"/>')
+    if details:
+        parts.append(details)
+    return "\n".join(parts)
+
+
+def _spire(cx, top, base, w=3):
+    """Antenna/spire on top of a building."""
+    return f'  <line x1="{cx}" y1="{top}" x2="{cx}" y2="{base}" stroke="#3a4a5a" stroke-width="{w}" stroke-linecap="round"/>'
+
+
+def _floor_lines(x, w, top, base, spacing=8, color="#ffffff", opacity=0.03):
+    """Horizontal floor separator lines for glass buildings."""
+    lines = []
+    y = top + spacing
+    while y < base:
+        lines.append(f'  <line x1="{x}" y1="{y}" x2="{x + w}" y2="{y}" stroke="{color}" stroke-width="0.5" opacity="{opacity}"/>')
+        y += spacing
+    return "\n".join(lines)
+
+
+def render_skyline_bg(period):
+    """Background layer — distant buildings, hazier and lighter."""
+    bc = building_colors(period)
+    haze_color = lighten(bc[0], 0.15)
+    parts = []
+
+    bgs = [
+        (20, 35, 215), (60, 28, 222), (95, 22, 228), (125, 30, 218),
+        (165, 25, 225), (200, 32, 212), (240, 28, 220), (278, 35, 210),
+        (320, 22, 230), (350, 30, 215), (390, 26, 225), (425, 35, 208),
+        (465, 28, 218), (500, 32, 222), (540, 25, 228), (575, 30, 215),
+        (610, 28, 220), (645, 35, 210), (685, 22, 232), (715, 30, 218),
+        (750, 28, 225), (785, 35, 212), (825, 25, 228), (860, 30, 220),
+        (900, 28, 225), (935, 35, 215), (975, 22, 230), (1010, 30, 218),
+        (1045, 28, 222), (1080, 35, 215), (1120, 25, 228), (1155, 30, 222),
+    ]
+
+    for x, w, top in bgs:
+        parts.append(f'  <rect x="{x}" y="{top}" width="{w}" height="{WATER_Y - top}" fill="{haze_color}" opacity="0.35"/>')
+
+    return "\n".join(parts)
+
+
+def render_skyline_mid(period):
+    """Midground — medium buildings with some detail."""
+    bc = building_colors(period)
+    mid = bc[1]
+    mid_side = darken(bc[1], 0.7)
+    parts = []
+
+    mids = [
+        (10, 38, 200, 4), (55, 30, 210, 3), (95, 35, 195, 4),
+        (140, 25, 208, 3), (180, 40, 190, 5), (230, 30, 205, 3),
+        (275, 35, 198, 4), (320, 28, 212, 3),
+        (700, 35, 195, 4), (745, 28, 208, 3), (785, 40, 188, 5),
+        (835, 30, 205, 3), (880, 35, 198, 4), (925, 25, 215, 3),
+        (960, 38, 200, 4), (1010, 30, 210, 3), (1050, 35, 195, 4),
+        (1095, 28, 205, 3), (1130, 32, 200, 4), (1170, 28, 210, 3),
+    ]
+
+    for x, w, top, sw in mids:
+        parts.append(_building(x, w, top, WATER_Y, mid, mid_side, sw))
+        parts.append(_floor_lines(x, w, top, WATER_Y, spacing=10, opacity=0.04))
+
+    return "\n".join(parts)
+
+
+def render_skyline_fg(period):
+    """Foreground — recognizable Philadelphia landmarks with full 3D treatment.
+
+    Landmarks (left to right):
+    - FMC Tower (curved top)
+    - Cira Centre
+    - 30th Street Station (low, wide, classical)
+    - One Liberty Place (spire, tallest)
+    - Two Liberty Place (shorter companion)
+    - City Hall (with William Penn statue)
+    - Comcast Technology Center (tall, modern)
+    - Comcast Center
+    - BNY Mellon Center
+    - Three Logan Square
+    - Various fill buildings
+    """
+    bc = building_colors(period)
+    front = bc[1]
+    side = darken(bc[1], 0.65)
+    light_front = bc[2]
+    dark = bc[0]
+    parts = []
+
+    # --- Left side fill buildings ---
+    parts.append(_building(0, 32, 218, WATER_Y, front, side, 3))
+    parts.append(_building(38, 25, 225, WATER_Y, dark, None))
+    parts.append(_building(70, 30, 212, WATER_Y, front, side, 3))
+
+    # --- FMC Tower (distinctive curved/angled top) ---
+    parts.append(_building(110, 32, 168, WATER_Y, light_front, side, 5))
+    # Angled crown
+    parts.append(f'  <polygon points="110,168 126,155 142,168" fill="{light_front}"/>')
+    parts.append(f'  <polygon points="142,168 147,165 147,168" fill="{side}" opacity="0.6"/>')
+    parts.append(_floor_lines(110, 32, 168, WATER_Y, spacing=7, opacity=0.06))
+
+    # --- Cira Centre (angular glass) ---
+    parts.append(_building(155, 36, 158, WATER_Y, front, side, 5))
+    # Slanted top
+    parts.append(f'  <polygon points="155,158 173,148 191,158" fill="{front}"/>')
+    parts.append(f'  <polygon points="191,158 196,155 196,163" fill="{side}" opacity="0.5"/>')
+    parts.append(_floor_lines(155, 36, 158, WATER_Y, spacing=6, opacity=0.07))
+
+    # --- 30th Street Station (low, wide, classical) ---
+    parts.append(_building(205, 70, 215, WATER_Y, light_front, side, 4))
+    # Classical columns suggestion
+    for cx in range(212, 270, 10):
+        parts.append(f'  <rect x="{cx}" y="218" width="3" height="37" fill="{bc[2]}" opacity="0.15"/>')
+    # Cornice
+    parts.append(f'  <rect x="203" y="213" width="74" height="3" fill="{bc[2]}"/>')
+
+    # --- Fill buildings before main cluster ---
+    parts.append(_building(285, 25, 205, WATER_Y, dark, None))
+    parts.append(_building(315, 28, 198, WATER_Y, front, side, 3))
+
+    # ============================================================
+    # MAIN CENTER CLUSTER — the signature Philly skyline
+    # ============================================================
+
+    # --- BNY Mellon Center ---
+    parts.append(_building(355, 35, 165, WATER_Y, front, side, 5))
+    parts.append(_floor_lines(355, 35, 165, WATER_Y, spacing=6, opacity=0.06))
+
+    # --- Three Logan Square ---
+    parts.append(_building(398, 30, 178, WATER_Y, light_front, side, 4))
+    parts.append(_floor_lines(398, 30, 178, WATER_Y, spacing=7, opacity=0.05))
+
+    # --- One Liberty Place (tallest, iconic spire) ---
+    parts.append(_building(440, 42, 110, WATER_Y, light_front, side, 6))
+    # Stepped crown
+    parts.append(f'  <rect x="445" y="105" width="32" height="8" fill="{bc[2]}"/>')
+    parts.append(f'  <rect x="450" y="98" width="22" height="10" fill="{bc[2]}"/>')
+    parts.append(f'  <rect x="455" y="90" width="12" height="10" fill="{bc[2]}"/>')
+    # Spire
+    parts.append(_spire(461, 60, 90, 2))
+    parts.append(_floor_lines(440, 42, 115, WATER_Y, spacing=5, opacity=0.07))
+    # Glass highlight stripe
+    parts.append(f'  <rect x="458" y="115" width="2" height="140" fill="#ffffff" opacity="0.04"/>')
+
+    # --- Two Liberty Place (shorter companion) ---
+    parts.append(_building(490, 36, 135, WATER_Y, front, side, 5))
+    # Stepped crown
+    parts.append(f'  <rect x="494" y="130" width="28" height="7" fill="{bc[1]}"/>')
+    parts.append(f'  <rect x="498" y="124" width="20" height="8" fill="{bc[1]}"/>')
+    parts.append(_spire(508, 105, 124, 2))
+    parts.append(_floor_lines(490, 36, 140, WATER_Y, spacing=6, opacity=0.06))
+
+    # --- City Hall (with Penn statue, lower but iconic) ---
+    parts.append(_building(540, 55, 185, WATER_Y, bc[2], side, 5))
+    # Tower
+    parts.append(f'  <rect x="558" y="148" width="18" height="37" fill="{bc[2]}"/>')
+    parts.append(f'  <rect x="560" y="145" width="14" height="5" fill="{bc[2]}"/>')
+    # Clock face suggestion
+    parts.append(f'  <circle cx="567" cy="158" r="4" fill="{bc[2]}" stroke="#3a4a5a" stroke-width="0.5" opacity="0.5"/>')
+    # William Penn statue (tiny!)
+    parts.append(f'  <rect x="565" y="137" width="4" height="8" fill="{bc[3]}"/>')
+    parts.append(f'  <circle cx="567" cy="135" r="2" fill="{bc[3]}"/>')
+    # Cornice details
+    parts.append(f'  <rect x="538" y="183" width="59" height="3" fill="{bc[2]}" opacity="0.8"/>')
+
+    # --- Comcast Technology Center (2nd tallest, modern glass) ---
+    parts.append(_building(610, 38, 95, WATER_Y, light_front, side, 6))
+    # Flat modern crown
+    parts.append(f'  <rect x="608" y="92" width="42" height="5" fill="{bc[2]}"/>')
+    parts.append(_spire(629, 75, 92, 2))
+    parts.append(_floor_lines(610, 38, 97, WATER_Y, spacing=5, opacity=0.08))
+    # Vertical glass mullion highlights
+    parts.append(f'  <rect x="622" y="97" width="1" height="158" fill="#ffffff" opacity="0.03"/>')
+    parts.append(f'  <rect x="636" y="97" width="1" height="158" fill="#ffffff" opacity="0.03"/>')
+
+    # --- Comcast Center (tall, modern) ---
+    parts.append(_building(658, 35, 125, WATER_Y, front, side, 5))
+    parts.append(_floor_lines(658, 35, 125, WATER_Y, spacing=6, opacity=0.06))
+    parts.append(f'  <rect x="656" y="122" width="39" height="4" fill="{bc[1]}"/>')
+
+    # ============================================================
+
+    # --- Right side fill buildings ---
+    parts.append(_building(705, 30, 188, WATER_Y, dark, side, 3))
+    parts.append(_building(742, 28, 195, WATER_Y, front, side, 3))
+    parts.append(_building(778, 35, 182, WATER_Y, light_front, side, 4))
+    parts.append(_floor_lines(778, 35, 182, WATER_Y, spacing=8, opacity=0.05))
+
+    parts.append(_building(822, 25, 205, WATER_Y, front, None))
+    parts.append(_building(855, 30, 198, WATER_Y, dark, side, 3))
+    parts.append(_building(895, 28, 210, WATER_Y, front, side, 3))
+    parts.append(_building(930, 35, 202, WATER_Y, light_front, side, 4))
+    parts.append(_building(975, 25, 215, WATER_Y, dark, None))
+    parts.append(_building(1008, 30, 208, WATER_Y, front, side, 3))
+    parts.append(_building(1045, 28, 218, WATER_Y, dark, None))
+    parts.append(_building(1080, 35, 212, WATER_Y, front, side, 3))
+    parts.append(_building(1122, 25, 222, WATER_Y, dark, None))
+    parts.append(_building(1155, 30, 218, WATER_Y, front, side, 3))
+
+    return "\n".join(parts)
 
 
 def render_windows(period):
-    color = "#58A6FF" if period in ("night", "dusk", "dawn") else "#ffffff"
-    op_base = 0.5 if period in ("night", "dusk", "dawn") else 0.15
-    positions = [
-        (398, 188, "w1"), (406, 200, "w2"), (398, 215, "w3"), (410, 228, "w1"),
-        (398, 245, "w2"), (406, 260, "w3"), (402, 275, "w1"),
-        (449, 222, "w2"), (459, 238, "w3"), (451, 255, "w1"), (462, 270, "w2"),
-        (490, 228, "w3"), (500, 245, "w1"), (492, 265, "w2"),
-        (588, 242, "w1"), (602, 238, "w3"), (612, 252, "w2"), (596, 262, "w1"),
-        (650, 212, "w2"), (660, 232, "w3"), (652, 255, "w1"), (662, 270, "w2"),
-        (696, 228, "w3"), (704, 248, "w1"), (698, 268, "w2"),
-        (92, 258, "w1"), (165, 235, "w3"), (212, 242, "w2"), (352, 252, "w1"),
-        (532, 252, "w3"), (738, 258, "w2"), (762, 248, "w1"), (835, 255, "w3"),
-        (875, 268, "w2"), (942, 268, "w1"),
-    ]
+    """Render lit windows across the skyline, clustered on major buildings."""
+    is_night = period in ("night", "dusk", "dawn")
+    warm = "#ffd166"
+    cool = "#58A6FF"
+    white = "#ffffff"
+    random.seed(42)
+
     lines = []
-    for x, y, cls in positions:
-        s = 3 if x < 720 else 2
-        op = round(op_base + random.uniform(-0.1, 0.2), 2)
-        lines.append(
-            f'  <rect class="{cls}" x="{x}" y="{y}" width="{s}" height="{s}" '
-            f'rx="0.5" fill="{color}" opacity="{max(0.1, op)}"/>'
-        )
+
+    # Window configs: (building_x, building_w, building_top, building_bottom, cols, rows)
+    buildings = [
+        # FMC Tower
+        (112, 28, 172, 250, 4, 10),
+        # Cira Centre
+        (158, 32, 162, 250, 5, 11),
+        # BNY Mellon
+        (358, 31, 170, 250, 4, 10),
+        # Three Logan
+        (400, 26, 182, 250, 3, 8),
+        # One Liberty Place
+        (443, 38, 118, 250, 5, 16),
+        # Two Liberty Place
+        (493, 32, 142, 250, 4, 13),
+        # City Hall
+        (543, 50, 190, 250, 6, 7),
+        # Comcast Tech Center
+        (613, 34, 100, 250, 5, 18),
+        # Comcast Center
+        (661, 31, 130, 250, 4, 14),
+        # Right buildings
+        (708, 26, 192, 250, 3, 7),
+        (780, 31, 186, 250, 4, 8),
+        (932, 31, 206, 250, 4, 5),
+    ]
+
+    for bx, bw, btop, bbot, cols, rows in buildings:
+        margin_x = 3
+        margin_y = 4
+        usable_w = bw - 2 * margin_x
+        usable_h = bbot - btop - 2 * margin_y
+        col_sp = usable_w / max(cols, 1)
+        row_sp = usable_h / max(rows, 1)
+        win_w = max(2, col_sp * 0.5)
+        win_h = max(1.5, row_sp * 0.4)
+
+        for r in range(rows):
+            for c in range(cols):
+                # Skip some windows randomly (not all lit)
+                if random.random() < (0.35 if is_night else 0.7):
+                    continue
+                wx = bx + margin_x + c * col_sp + (col_sp - win_w) / 2
+                wy = btop + margin_y + r * row_sp + (row_sp - win_h) / 2
+
+                if is_night:
+                    color = warm if random.random() < 0.6 else cool
+                    op = round(random.uniform(0.4, 0.9), 2)
+                    cls = "wp" if random.random() < 0.3 else ("wf" if random.random() < 0.1 else "")
+                else:
+                    color = white
+                    op = round(random.uniform(0.06, 0.2), 2)
+                    cls = ""
+
+                cls_attr = f' class="{cls}"' if cls else ""
+                lines.append(
+                    f'  <rect{cls_attr} x="{wx:.1f}" y="{wy:.1f}" width="{win_w:.1f}" '
+                    f'height="{win_h:.1f}" rx="0.3" fill="{color}" opacity="{op}"/>'
+                )
+
     return "\n".join(lines)
+
+
+def render_water(period):
+    """Render the Schuylkill River with reflections."""
+    is_night = period in ("night", "dusk", "dawn")
+    parts = []
+
+    # Water base
+    parts.append(f'  <rect x="0" y="{WATER_Y}" width="{WIDTH}" height="{HEIGHT - WATER_Y}" fill="url(#water)"/>')
+
+    # Reflection of skyline (blurred, flipped, faded)
+    parts.append(f'  <g filter="url(#waterBlur)" opacity="0.12" transform="translate(0,{2 * WATER_Y}) scale(1,-1)">')
+    parts.append(f'    <rect x="350" y="95" width="350" height="160" fill="{"#1a2a4a" if is_night else "#2a3a4a"}"/>')
+    parts.append(f'  </g>')
+
+    # Water surface highlights / ripples
+    random.seed(777)
+    ripple_color = "#58A6FF" if is_night else "#8ab4d8"
+    for _ in range(20):
+        rx = random.randint(0, WIDTH)
+        ry = random.randint(WATER_Y + 5, HEIGHT - 5)
+        rw = random.randint(15, 60)
+        op = round(random.uniform(0.03, 0.12), 2)
+        cls = "ws" if random.random() < 0.4 else ""
+        cls_attr = f' class="{cls}"' if cls else ""
+        parts.append(
+            f'  <line{cls_attr} x1="{rx}" y1="{ry}" x2="{rx + rw}" y2="{ry}" '
+            f'stroke="{ripple_color}" stroke-width="0.5" opacity="{op}"/>'
+        )
+
+    # Light reflections on water from major buildings (vertical streaks)
+    if is_night:
+        for cx, op in [(461, 0.08), (508, 0.06), (629, 0.09), (567, 0.04), (675, 0.05)]:
+            parts.append(
+                f'  <rect x="{cx - 2}" y="{WATER_Y}" width="4" height="{HEIGHT - WATER_Y}" '
+                f'fill="#ffd166" opacity="{op}" filter="url(#waterBlur)"/>'
+            )
+
+    return "\n".join(parts)
+
+
+def render_atmosphere(period):
+    """Atmospheric haze overlay for depth."""
+    parts = []
+    # Horizon haze band
+    if period in ("day", "morning"):
+        parts.append(
+            f'  <rect x="0" y="180" width="{WIDTH}" height="75" '
+            f'fill="#aed6f1" opacity="0.06"/>'
+        )
+    elif period in ("sunset", "dawn"):
+        parts.append(
+            f'  <rect x="0" y="180" width="{WIDTH}" height="75" '
+            f'fill="#f39c12" opacity="0.05"/>'
+        )
+
+    # City glow (light pollution dome)
+    parts.append(f'  <rect x="0" y="0" width="{WIDTH}" height="{HEIGHT}" fill="url(#cityGlow)"/>')
+
+    return "\n".join(parts)
 
 
 def generate_svg(weather_data, now):
@@ -280,7 +714,6 @@ def generate_svg(weather_data, now):
     weather_main = weather_data["weather"][0]["main"]
     weather_desc = weather_data["weather"][0]["description"]
     temp = round(weather_data["main"]["temp"])
-    feels = round(weather_data["main"]["feels_like"])
 
     colors = sky_gradient(period, weather_main)
     gradient_stops = "\n".join(
@@ -296,70 +729,53 @@ def generate_svg(weather_data, now):
     clouds = render_clouds(weather_main)
     stars = render_stars(period)
     sun_moon = render_sun_moon(period)
+    defs = render_defs(period, weather_main, gradient_stops)
 
-    random.seed(42)
+    skyline_bg = render_skyline_bg(period)
+    skyline_mid = render_skyline_mid(period)
+    skyline_fg = render_skyline_fg(period)
     windows = render_windows(period)
+    water = render_water(period)
+    atmosphere = render_atmosphere(period)
 
     time_str = now.strftime("%-I:%M %p")
+    degree = "\u00b0"
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}">
-  <defs>
-    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-{gradient_stops}
-    </linearGradient>
-    <linearGradient id="cityGlow" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
-    </linearGradient>
-    <style>
-      @keyframes twinkle1 {{ 0%,100% {{ opacity: 0.2; }} 50% {{ opacity: 1; }} }}
-      @keyframes twinkle2 {{ 0%,100% {{ opacity: 0.5; }} 50% {{ opacity: 0.9; }} }}
-      @keyframes twinkle3 {{ 0%,100% {{ opacity: 0.1; }} 50% {{ opacity: 0.8; }} }}
-      @keyframes windowGlow {{ 0%,100% {{ opacity: 0.25; }} 50% {{ opacity: 0.8; }} }}
-      @keyframes cloudDrift {{ 0% {{ transform: translateX(0); }} 100% {{ transform: translateX(30px); }} }}
-      @keyframes fadeIn {{ 0% {{ opacity: 0; }} 100% {{ opacity: 1; }} }}
-      .s1 {{ animation: twinkle1 3s ease-in-out infinite; }}
-      .s2 {{ animation: twinkle2 2.5s ease-in-out infinite 0.8s; }}
-      .s3 {{ animation: twinkle3 4s ease-in-out infinite 1.5s; }}
-      .s4 {{ animation: twinkle1 3.5s ease-in-out infinite 2s; }}
-      .s5 {{ animation: twinkle2 2s ease-in-out infinite 0.3s; }}
-      .w1 {{ animation: windowGlow 4s ease-in-out infinite; }}
-      .w2 {{ animation: windowGlow 3s ease-in-out infinite 1s; }}
-      .w3 {{ animation: windowGlow 5s ease-in-out infinite 2s; }}
-      .cloud1 {{ animation: cloudDrift 20s ease-in-out infinite alternate; }}
-      .cloud2 {{ animation: cloudDrift 25s ease-in-out infinite alternate-reverse; }}
-      .name-text {{
-        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-        font-size: 52px; font-weight: 700; fill: #FFFFFF;
-        animation: fadeIn 2s ease-in;
-      }}
-      .sub-text {{
-        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-        font-size: 13px; font-weight: 400; fill: #58A6FF;
-        letter-spacing: 5px; animation: fadeIn 3s ease-in;
-      }}
-      .weather-text {{
-        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-        font-size: 11px; fill: #8B949E; letter-spacing: 1px;
-      }}
-    </style>
-  </defs>
+{defs}
 
+  <g clip-path="url(#bannerClip)">
+  <!-- Sky -->
   <rect width="{WIDTH}" height="{HEIGHT}" fill="url(#sky)"/>
-  <ellipse cx="600" cy="300" rx="550" ry="80" fill="url(#cityGlow)"/>
 
+  <!-- Celestial -->
 {sun_moon}
 {stars}
 {clouds}
+
+  <!-- Atmosphere -->
+{atmosphere}
+
+  <!-- Skyline layers (back to front) -->
+{skyline_bg}
+{skyline_mid}
+{skyline_fg}
+
+  <!-- Windows -->
+{windows}
+
+  <!-- Water -->
+{water}
+
+  <!-- Weather effects -->
 {weather_fx}
 
-  <text class="name-text" x="600" y="120" text-anchor="middle">Zakir Jiwani</text>
-  <text class="sub-text" x="600" y="148" text-anchor="middle">PHILADELPHIA, PA</text>
-  <text class="weather-text" x="1175" y="18" text-anchor="end">{temp}F / {weather_desc.title()}</text>
-  <text class="weather-text" x="1175" y="32" text-anchor="end">{time_str} ET</text>
-
-{SKYLINE}
-{windows}
+  <!-- Text overlay -->
+  <text class="name-text" x="600" y="108" text-anchor="middle">Zakir Jiwani</text>
+  <text class="sub-text" x="600" y="130" text-anchor="middle">PHILADELPHIA, PA</text>
+  <text class="weather-text" x="1180" y="16" text-anchor="end">{temp}{degree}F  {weather_desc.title()}</text>
+  <text class="weather-text" x="1180" y="30" text-anchor="end">{time_str} ET</text>
+  </g>
 </svg>"""
 
 
