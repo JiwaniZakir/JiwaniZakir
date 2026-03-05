@@ -140,21 +140,13 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 
 <div align="center">
 
-### Open Source
+### Open Source Contributions
 
 <br/>
 
-<p>
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr&query=%24.total_count&label=Total%20PRs&color=58A6FF&style=for-the-badge&labelColor=0D1117&logo=git-pull-request&logoColor=white" alt="Total PRs"/>
-&nbsp;
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AJiwaniZakir%2Btype%3Apr%2Bis%3Amerged&query=%24.total_count&label=Merged&color=238636&style=for-the-badge&labelColor=0D1117&logo=git-merge&logoColor=white" alt="Merged"/>
-&nbsp;
-<img src="https://img.shields.io/github/followers/JiwaniZakir?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117&logo=github&logoColor=white" alt="Followers"/>
-&nbsp;
-<img src="https://img.shields.io/github/stars/JiwaniZakir?affiliations=OWNER&style=for-the-badge&color=58A6FF&labelColor=0D1117&label=Stars&logo=github&logoColor=white" alt="Stars"/>
-</p>
+<img src="./assets/contributions.svg" alt="Open Source Contributions — LangChain, Microsoft GraphRAG, OpenClaw, and more" width="100%"/>
 
-<br/>
+<br/><br/>
 
 <a href="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats?user_id=108548454" target="_blank">
 <picture>
