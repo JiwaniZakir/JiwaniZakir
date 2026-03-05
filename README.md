@@ -22,52 +22,46 @@
 <tr>
 <td width="55%" valign="top">
 
-### 🧠 About Me
+### About Me
 
-🤖 &nbsp; Building **autonomous AI systems** — multi-agent orchestration, RAG pipelines, and graph intelligence that run 24/7
+Building **autonomous AI systems** — multi-agent orchestration, RAG pipelines, and graph intelligence that run 24/7
 
-🏗️ &nbsp; Founder of **[The Foundry PHL](https://thefoundryphl.com)** — nonprofit empowering young founders on the East Coast
+Founder of **[The Foundry PHL](https://thefoundryphl.com)** — nonprofit empowering young founders on the East Coast
 
-🎓 &nbsp; Studying **Computer Science** at **Drexel University**
+Studying **Computer Science** at **Drexel University**
 
-🔬 &nbsp; Shipping research to production — ReAct, Self-RAG, Constitutional AI
+Shipping research to production — ReAct, Self-RAG, Constitutional AI
 
 <br/>
 
-### ⚡ Tech Stack
+### Tech Stack
 
-**Languages**
-<br/>
+**Languages** &nbsp;
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
 
-**AI / ML**
-<br/>
+**AI / ML** &nbsp;
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
 <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
 <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
 
-**Backend**
-<br/>
+**Backend** &nbsp;
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
 <img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"/>
 
-**Data**
-<br/>
+**Data** &nbsp;
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
 <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white"/>
 
-**Frontend**
-<br/>
+**Frontend** &nbsp;
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
 <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
 
-**Infra**
-<br/>
+**Infra** &nbsp;
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
 <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
@@ -75,7 +69,7 @@
 </td>
 <td width="45%" valign="top">
 
-### 📈 At a Glance
+### At a Glance
 
 <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&count_private=true&icon_color=58A6FF&title_color=58A6FF&include_all_commits=true&rank_icon=percentile" width="100%"/>
 
@@ -95,39 +89,48 @@
 
 <p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
-<!-- ═══════════════════════════════ MY PROJECTS ═══════════════════════════════ -->
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
 
 <div align="center">
 
-### 🚀 What I've Built
+### What I've Built
+
+</div>
 
 <br/>
 
+<!-- Row 1: Aegis + Partnerships OS -->
+<p align="center">
 <a href="https://github.com/JiwaniZakir/aegis">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=aegis&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+<img src="./assets/projects/aegis.svg" width="49%" alt="Aegis — Personal Intelligence Platform"/>
 </a>
 &nbsp;
 <a href="https://github.com/JiwaniZakir/Partnerships_OS">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=Partnerships_OS&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+<img src="./assets/projects/partnerships-os.svg" width="49%" alt="Partnerships OS — Enterprise Partnership Intelligence"/>
 </a>
+</p>
 
+<!-- Row 2: Sentinel + Lattice -->
+<p align="center">
 <a href="https://github.com/JiwaniZakir/sentinel">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=sentinel&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+<img src="./assets/projects/sentinel.svg" width="49%" alt="Sentinel — AI Community Management Bot"/>
 </a>
 &nbsp;
 <a href="https://github.com/JiwaniZakir/lattice">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=lattice&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+<img src="./assets/projects/lattice.svg" width="49%" alt="Lattice — Hierarchical Agent Orchestration"/>
 </a>
+</p>
 
+<!-- Row 3: EVITA + Spectra -->
+<p align="center">
 <a href="https://github.com/JiwaniZakir/evictionchatbot">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=evictionchatbot&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+<img src="./assets/projects/evita.svg" width="49%" alt="EVITA — AI Legal Assistant for Tenants"/>
 </a>
 &nbsp;
 <a href="https://github.com/JiwaniZakir/spectra">
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=JiwaniZakir&repo=spectra&theme=github_dark&hide_border=true&border_radius=12&icon_color=58A6FF&title_color=58A6FF&show_owner=true" width="49%"/>
+<img src="./assets/projects/spectra.svg" width="49%" alt="Spectra — Systematic RAG Evaluation"/>
 </a>
-
-</div>
+</p>
 
 <br/>
 
@@ -137,7 +140,7 @@
 
 <div align="center">
 
-### 🌐 Open Source Contributions
+### Open Source
 
 <br/>
 
@@ -166,7 +169,6 @@
 <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" width="100%">
 <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Graph" width="100%"/>
 </picture>
-
 
 </div>
 

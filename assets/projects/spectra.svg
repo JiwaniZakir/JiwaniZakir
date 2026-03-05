@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="320" viewBox="0 0 580 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58A6FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect width="580" height="320" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <!-- Background -->
+    <rect width="580" height="320" fill="url(#bg)"/>
+    <rect x="0" y="0" width="580" height="1" fill="url(#accent-line)"/>
+
+    <!-- Header -->
+    <g transform="translate(24, 28)">
+      <circle cx="10" cy="10" r="10" fill="#58A6FF" opacity="0.15"/><circle cx="9" cy="9" r="4" fill="none" stroke="#58A6FF" stroke-width="1.5"/><line x1="12" y1="12" x2="16" y2="16" stroke="#58A6FF" stroke-width="1.5"/>
+      <text x="32" y="4" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#E6EDF3">Spectra</text>
+      <text x="32" y="22" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" fill="#8B949E">Systematic RAG Evaluation</text>
+    </g>
+
+    <!-- Tag -->
+    <rect x="480" y="18" width="80" height="22" rx="11" fill="#58A6FF" opacity="0.15"/>
+    <text x="520" y="33" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#58A6FF">FRAMEWORK</text>
+
+    <!-- Divider -->
+    <line x1="24" y1="58" x2="556" y2="58" stroke="#30363D" stroke-width="1"/>
+
+    <!-- Content -->
+    <g transform="translate(0, 68)">
+      <text x="30" y="12" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8B949E">RAG EVALUATION FRAMEWORK</text>
+      <text x="30" y="32" font-family="'Segoe UI',sans-serif" font-size="8" fill="#8B949E">12 RETRIEVAL STRATEGIES</text>
+      <rect x="30" y="40" width="120" height="20" rx="6" fill="#58A6FF" opacity="0.12" stroke="#58A6FF" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="90.0" y="54.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#58A6FF">Naive RAG</text>
+      <rect x="30" y="64" width="120" height="20" rx="6" fill="#58A6FF" opacity="0.12" stroke="#58A6FF" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="90.0" y="78.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#58A6FF">HyDE</text>
+      <rect x="30" y="88" width="120" height="20" rx="6" fill="#D2A8FF" opacity="0.12" stroke="#D2A8FF" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="90.0" y="102.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#D2A8FF">Self-RAG</text>
+      <rect x="30" y="112" width="120" height="20" rx="6" fill="#F78166" opacity="0.12" stroke="#F78166" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="90.0" y="126.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#F78166">Fusion</text>
+      <rect x="30" y="136" width="120" height="20" rx="6" fill="#FF7B72" opacity="0.12" stroke="#FF7B72" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="90.0" y="150.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#FF7B72">ColBERT</text>
+      <text x="90" y="170" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8B949E">+ 7 more...</text>
+      <line x1="150" y1="100" x2="190" y2="100" stroke="#58A6FF" stroke-width="1" stroke-dasharray="3,2" opacity="0.4"/>
+      <rect x="190" y="38" width="140" height="50" rx="6" fill="#D2A8FF" opacity="0.12" stroke="#D2A8FF" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="260.0" y="63.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#D2A8FF">A/B Test Engine</text>
+      <text x="260.0" y="77.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="8" fill="#8B949E">Automated comparison</text>
+      <line x1="190" y1="100" x2="330" y2="60" stroke="#D2A8FF" stroke-width="1" stroke-dasharray="3,2" opacity="0.4"/>
+      <rect x="190" y="100" width="140" height="50" rx="6" fill="#58A6FF" opacity="0.12" stroke="#58A6FF" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="260.0" y="125.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#58A6FF">Quality Metrics</text>
+      <text x="260.0" y="139.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="8" fill="#8B949E">Precision + Recall</text>
+      <line x1="330" y1="125" x2="360" y2="75" stroke="#58A6FF" stroke-width="1" stroke-dasharray="3,2" opacity="0.4"/>
+      <rect x="360" y="38" width="185" height="50" rx="6" fill="#3FB950" opacity="0.12" stroke="#3FB950" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text x="452.5" y="63.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="600" fill="#3FB950">Pareto-Optimal</text>
+      <text x="452.5" y="77.0" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="8" fill="#8B949E">Best accuracy vs. latency</text>
+      <text x="370" y="108" font-family="'Segoe UI',sans-serif" font-size="8" fill="#8B949E">PARETO FRONTIER</text>
+      <line x1="370" y1="190" x2="535" y2="190" stroke="#8B949E" stroke-width="0.5"/>
+      <line x1="370" y1="120" x2="370" y2="190" stroke="#8B949E" stroke-width="0.5"/>
+      <text x="450" y="205" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="7" fill="#8B949E">Latency</text>
+      <text x="360" y="155" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="7" fill="#8B949E" transform="rotate(-90, 360, 155)">Quality</text>
+      <circle cx="390" cy="175" r="3" fill="#FF7B72" opacity="0.5"/>
+      <circle cx="410" cy="160" r="3" fill="#F78166" opacity="0.5"/>
+      <circle cx="435" cy="145" r="4" fill="#3FB950"/>
+      <circle cx="470" cy="135" r="4" fill="#D2A8FF"/>
+      <circle cx="510" cy="130" r="3" fill="#58A6FF" opacity="0.5"/>
+      <path d="M390 175 Q420 150 435 145 Q460 135 510 130" fill="none" stroke="#3FB950" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+      <text x="50" y="218" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#58A6FF">12</text>
+      <text x="50" y="232" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8B949E">Strategies</text>
+      <text x="170" y="218" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#D2A8FF">A/B</text>
+      <text x="170" y="232" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8B949E">Auto-Testing</text>
+      <text x="310" y="218" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#3FB950">Pareto</text>
+      <text x="310" y="232" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8B949E">Optimization</text>
+      <text x="430" y="218" font-family="'Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#F78166">MkDocs</text>
+      <text x="430" y="232" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8B949E">Documentation</text>
+    </g>
+  </g>
+
+  <!-- Border -->
+  <rect width="580" height="320" rx="16" fill="none" stroke="#30363D" stroke-width="1"/>
+</svg>
