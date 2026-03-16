@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#131322"/>
-      <stop offset="35%" stop-color="#902a20"/>
-      <stop offset="70%" stop-color="#b6750d"/>
-      <stop offset="100%" stop-color="#bfb19d"/>
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="35%" stop-color="#c0392b"/>
+      <stop offset="70%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#ffecd2"/>
     </linearGradient>
 
     <!-- Building face gradients (3D lighting - light from right) -->
@@ -129,21 +129,7 @@
   <circle class="s5" cx="338" cy="60" r="1.7" fill="#fff" opacity="0.3"/>
   <circle class="s1" cx="709" cy="31" r="0.5" fill="#fff" opacity="0.3"/>
   <circle class="s2" cx="218" cy="96" r="1.6" fill="#fff" opacity="0.3"/>
-  <g opacity="0.25" class="cloud1">
-    <ellipse cx="160" cy="50" rx="60" ry="16" fill="#6B7585"/>
-    <ellipse cx="200" cy="42" rx="45" ry="14" fill="#7B8595"/>
-    <ellipse cx="130" cy="47" rx="35" ry="12" fill="#6B7585"/>
-    <ellipse cx="175" cy="38" rx="30" ry="10" fill="#8B959E"/>
-  </g>
-  <g opacity="0.18" class="cloud2">
-    <ellipse cx="780" cy="35" rx="55" ry="14" fill="#6B7585"/>
-    <ellipse cx="815" cy="28" rx="40" ry="12" fill="#7B8595"/>
-    <ellipse cx="755" cy="32" rx="30" ry="10" fill="#6B7585"/>
-  </g>
-  <g opacity="0.15" class="cloud1">
-    <ellipse cx="1050" cy="55" rx="45" ry="12" fill="#6B7585"/>
-    <ellipse cx="1080" cy="49" rx="32" ry="10" fill="#7B8595"/>
-  </g>
+
 
   <!-- Atmosphere -->
   <rect x="0" y="180" width="1200" height="75" fill="#f39c12" opacity="0.05"/>
@@ -995,7 +981,7 @@
   <!-- Text overlay -->
   <text class="name-text" x="600" y="108" text-anchor="middle">Zakir Jiwani</text>
   <text class="sub-text" x="600" y="130" text-anchor="middle">PHILADELPHIA, PA</text>
-  <text class="weather-text" x="1180" y="16" text-anchor="end">57°F  Overcast</text>
-  <text class="weather-text" x="1180" y="30" text-anchor="end">5:54 AM ET</text>
+  <text class="weather-text" x="1180" y="16" text-anchor="end">57°F  Fog</text>
+  <text class="weather-text" x="1180" y="30" text-anchor="end">6:26 AM ET</text>
   </g>
 </svg>
