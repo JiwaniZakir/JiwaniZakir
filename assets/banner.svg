@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0b091e"/>
-      <stop offset="50%" stop-color="#24204a"/>
-      <stop offset="100%" stop-color="#3f375d"/>
+      <stop offset="0%" stop-color="#070614"/>
+      <stop offset="50%" stop-color="#181531"/>
+      <stop offset="100%" stop-color="#2a253e"/>
     </linearGradient>
 
     <!-- Building face gradients (3D lighting - light from right) -->
@@ -134,21 +134,7 @@
   <circle class="s3" cx="183" cy="64" r="1.6" fill="#fff" opacity="0.5"/>
   <circle class="s4" cx="798" cy="76" r="1.0" fill="#fff" opacity="0.5"/>
   <circle class="s5" cx="767" cy="46" r="0.9" fill="#fff" opacity="0.5"/>
-  <g opacity="0.25" class="cloud1">
-    <ellipse cx="160" cy="50" rx="60" ry="16" fill="#6B7585"/>
-    <ellipse cx="200" cy="42" rx="45" ry="14" fill="#7B8595"/>
-    <ellipse cx="130" cy="47" rx="35" ry="12" fill="#6B7585"/>
-    <ellipse cx="175" cy="38" rx="30" ry="10" fill="#8B959E"/>
-  </g>
-  <g opacity="0.18" class="cloud2">
-    <ellipse cx="780" cy="35" rx="55" ry="14" fill="#6B7585"/>
-    <ellipse cx="815" cy="28" rx="40" ry="12" fill="#7B8595"/>
-    <ellipse cx="755" cy="32" rx="30" ry="10" fill="#6B7585"/>
-  </g>
-  <g opacity="0.15" class="cloud1">
-    <ellipse cx="1050" cy="55" rx="45" ry="12" fill="#6B7585"/>
-    <ellipse cx="1080" cy="49" rx="32" ry="10" fill="#7B8595"/>
-  </g>
+
 
   <!-- Atmosphere -->
   <rect x="0" y="0" width="1200" height="300" fill="url(#cityGlow)"/>
@@ -994,12 +980,61 @@
   <rect x="673" y="255" width="4" height="45" fill="#ffd166" opacity="0.05" filter="url(#waterBlur)"/>
 
   <!-- Weather effects -->
-
+  <line x1="980" y1="18" x2="977" y2="43" stroke="#58A6FF" stroke-width="0.8" opacity="0.28"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y2" from="5" to="325" dur="0.8s" begin="0.2s" repeatCount="indefinite"/></line>
+  <line x1="1079" y1="157" x2="1076" y2="173" stroke="#58A6FF" stroke-width="0.8" opacity="0.33"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.91s" repeatCount="indefinite"/><animate attributeName="y2" from="-4" to="316" dur="0.8s" begin="0.91s" repeatCount="indefinite"/></line>
+  <line x1="733" y1="153" x2="730" y2="172" stroke="#58A6FF" stroke-width="0.8" opacity="0.31"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.45s" repeatCount="indefinite"/><animate attributeName="y2" from="-1" to="319" dur="0.8s" begin="1.45s" repeatCount="indefinite"/></line>
+  <line x1="544" y1="283" x2="541" y2="300" stroke="#58A6FF" stroke-width="0.8" opacity="0.31"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.56s" repeatCount="indefinite"/><animate attributeName="y2" from="-3" to="317" dur="0.8s" begin="0.56s" repeatCount="indefinite"/></line>
+  <line x1="733" y1="263" x2="730" y2="278" stroke="#58A6FF" stroke-width="0.8" opacity="0.36"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.24s" repeatCount="indefinite"/><animate attributeName="y2" from="-5" to="315" dur="0.8s" begin="1.24s" repeatCount="indefinite"/></line>
+  <line x1="860" y1="42" x2="857" y2="66" stroke="#58A6FF" stroke-width="0.8" opacity="0.26"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.13s" repeatCount="indefinite"/><animate attributeName="y2" from="4" to="324" dur="0.8s" begin="0.13s" repeatCount="indefinite"/></line>
+  <line x1="464" y1="121" x2="461" y2="137" stroke="#58A6FF" stroke-width="0.8" opacity="0.36"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.17s" repeatCount="indefinite"/><animate attributeName="y2" from="-4" to="316" dur="0.8s" begin="0.17s" repeatCount="indefinite"/></line>
+  <line x1="207" y1="238" x2="204" y2="248" stroke="#58A6FF" stroke-width="0.8" opacity="0.37"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.71s" repeatCount="indefinite"/><animate attributeName="y2" from="-10" to="310" dur="0.8s" begin="0.71s" repeatCount="indefinite"/></line>
+  <line x1="682" y1="39" x2="679" y2="50" stroke="#58A6FF" stroke-width="0.8" opacity="0.38"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.43s" repeatCount="indefinite"/><animate attributeName="y2" from="-9" to="311" dur="0.8s" begin="0.43s" repeatCount="indefinite"/></line>
+  <line x1="204" y1="190" x2="201" y2="204" stroke="#58A6FF" stroke-width="0.8" opacity="0.36"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y2" from="-6" to="314" dur="0.8s" begin="0.3s" repeatCount="indefinite"/></line>
+  <line x1="254" y1="161" x2="251" y2="175" stroke="#58A6FF" stroke-width="0.8" opacity="0.37"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.97s" repeatCount="indefinite"/><animate attributeName="y2" from="-6" to="314" dur="0.8s" begin="0.97s" repeatCount="indefinite"/></line>
+  <line x1="43" y1="201" x2="40" y2="214" stroke="#58A6FF" stroke-width="0.8" opacity="0.28"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.72s" repeatCount="indefinite"/><animate attributeName="y2" from="-7" to="313" dur="0.8s" begin="0.72s" repeatCount="indefinite"/></line>
+  <line x1="329" y1="255" x2="326" y2="266" stroke="#58A6FF" stroke-width="0.8" opacity="0.3"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.04s" repeatCount="indefinite"/><animate attributeName="y2" from="-9" to="311" dur="0.8s" begin="1.04s" repeatCount="indefinite"/></line>
+  <line x1="812" y1="208" x2="809" y2="218" stroke="#58A6FF" stroke-width="0.8" opacity="0.34"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.0s" repeatCount="indefinite"/><animate attributeName="y2" from="-10" to="310" dur="0.8s" begin="1.0s" repeatCount="indefinite"/></line>
+  <line x1="2" y1="252" x2="-1" y2="266" stroke="#58A6FF" stroke-width="0.8" opacity="0.35"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.43s" repeatCount="indefinite"/><animate attributeName="y2" from="-6" to="314" dur="0.8s" begin="0.43s" repeatCount="indefinite"/></line>
+  <line x1="834" y1="224" x2="831" y2="242" stroke="#58A6FF" stroke-width="0.8" opacity="0.29"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.13s" repeatCount="indefinite"/><animate attributeName="y2" from="-2" to="318" dur="0.8s" begin="0.13s" repeatCount="indefinite"/></line>
+  <line x1="447" y1="20" x2="444" y2="34" stroke="#58A6FF" stroke-width="0.8" opacity="0.26"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="y2" from="-6" to="314" dur="0.8s" begin="1.2s" repeatCount="indefinite"/></line>
+  <line x1="301" y1="98" x2="298" y2="109" stroke="#58A6FF" stroke-width="0.8" opacity="0.33"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.05s" repeatCount="indefinite"/><animate attributeName="y2" from="-9" to="311" dur="0.8s" begin="0.05s" repeatCount="indefinite"/></line>
+  <line x1="1193" y1="13" x2="1190" y2="38" stroke="#58A6FF" stroke-width="0.8" opacity="0.22"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.53s" repeatCount="indefinite"/><animate attributeName="y2" from="5" to="325" dur="0.8s" begin="0.53s" repeatCount="indefinite"/></line>
+  <line x1="805" y1="130" x2="802" y2="141" stroke="#58A6FF" stroke-width="0.8" opacity="0.38"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="y2" from="-9" to="311" dur="0.8s" begin="1.5s" repeatCount="indefinite"/></line>
+  <line x1="1013" y1="226" x2="1010" y2="241" stroke="#58A6FF" stroke-width="0.8" opacity="0.22"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.41s" repeatCount="indefinite"/><animate attributeName="y2" from="-5" to="315" dur="0.8s" begin="1.41s" repeatCount="indefinite"/></line>
+  <line x1="831" y1="90" x2="828" y2="106" stroke="#58A6FF" stroke-width="0.8" opacity="0.22"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.47s" repeatCount="indefinite"/><animate attributeName="y2" from="-4" to="316" dur="0.8s" begin="0.47s" repeatCount="indefinite"/></line>
+  <line x1="1019" y1="257" x2="1016" y2="277" stroke="#58A6FF" stroke-width="0.8" opacity="0.22"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.21s" repeatCount="indefinite"/><animate attributeName="y2" from="0" to="320" dur="0.8s" begin="0.21s" repeatCount="indefinite"/></line>
+  <line x1="208" y1="40" x2="205" y2="60" stroke="#58A6FF" stroke-width="0.8" opacity="0.35"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.38s" repeatCount="indefinite"/><animate attributeName="y2" from="0" to="320" dur="0.8s" begin="0.38s" repeatCount="indefinite"/></line>
+  <line x1="285" y1="222" x2="282" y2="235" stroke="#58A6FF" stroke-width="0.8" opacity="0.18"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.57s" repeatCount="indefinite"/><animate attributeName="y2" from="-7" to="313" dur="0.8s" begin="0.57s" repeatCount="indefinite"/></line>
+  <line x1="507" y1="89" x2="504" y2="101" stroke="#58A6FF" stroke-width="0.8" opacity="0.23"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.47s" repeatCount="indefinite"/><animate attributeName="y2" from="-8" to="312" dur="0.8s" begin="0.47s" repeatCount="indefinite"/></line>
+  <line x1="92" y1="171" x2="89" y2="182" stroke="#58A6FF" stroke-width="0.8" opacity="0.16"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.42s" repeatCount="indefinite"/><animate attributeName="y2" from="-9" to="311" dur="0.8s" begin="1.42s" repeatCount="indefinite"/></line>
+  <line x1="497" y1="101" x2="494" y2="125" stroke="#58A6FF" stroke-width="0.8" opacity="0.37"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.07s" repeatCount="indefinite"/><animate attributeName="y2" from="4" to="324" dur="0.8s" begin="1.07s" repeatCount="indefinite"/></line>
+  <line x1="416" y1="198" x2="413" y2="211" stroke="#58A6FF" stroke-width="0.8" opacity="0.39"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.71s" repeatCount="indefinite"/><animate attributeName="y2" from="-7" to="313" dur="0.8s" begin="0.71s" repeatCount="indefinite"/></line>
+  <line x1="550" y1="225" x2="547" y2="249" stroke="#58A6FF" stroke-width="0.8" opacity="0.27"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.69s" repeatCount="indefinite"/><animate attributeName="y2" from="4" to="324" dur="0.8s" begin="0.69s" repeatCount="indefinite"/></line>
+  <line x1="606" y1="201" x2="603" y2="222" stroke="#58A6FF" stroke-width="0.8" opacity="0.37"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.02s" repeatCount="indefinite"/><animate attributeName="y2" from="1" to="321" dur="0.8s" begin="1.02s" repeatCount="indefinite"/></line>
+  <line x1="824" y1="220" x2="821" y2="238" stroke="#58A6FF" stroke-width="0.8" opacity="0.24"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.36s" repeatCount="indefinite"/><animate attributeName="y2" from="-2" to="318" dur="0.8s" begin="1.36s" repeatCount="indefinite"/></line>
+  <line x1="913" y1="252" x2="910" y2="262" stroke="#58A6FF" stroke-width="0.8" opacity="0.33"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.19s" repeatCount="indefinite"/><animate attributeName="y2" from="-10" to="310" dur="0.8s" begin="0.19s" repeatCount="indefinite"/></line>
+  <line x1="1025" y1="160" x2="1022" y2="184" stroke="#58A6FF" stroke-width="0.8" opacity="0.32"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.05s" repeatCount="indefinite"/><animate attributeName="y2" from="4" to="324" dur="0.8s" begin="1.05s" repeatCount="indefinite"/></line>
+  <line x1="229" y1="287" x2="226" y2="310" stroke="#58A6FF" stroke-width="0.8" opacity="0.26"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.58s" repeatCount="indefinite"/><animate attributeName="y2" from="3" to="323" dur="0.8s" begin="0.58s" repeatCount="indefinite"/></line>
+  <line x1="1128" y1="249" x2="1125" y2="259" stroke="#58A6FF" stroke-width="0.8" opacity="0.18"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.09s" repeatCount="indefinite"/><animate attributeName="y2" from="-10" to="310" dur="0.8s" begin="0.09s" repeatCount="indefinite"/></line>
+  <line x1="402" y1="77" x2="399" y2="98" stroke="#58A6FF" stroke-width="0.8" opacity="0.38"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.15s" repeatCount="indefinite"/><animate attributeName="y2" from="1" to="321" dur="0.8s" begin="0.15s" repeatCount="indefinite"/></line>
+  <line x1="483" y1="84" x2="480" y2="106" stroke="#58A6FF" stroke-width="0.8" opacity="0.22"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.09s" repeatCount="indefinite"/><animate attributeName="y2" from="2" to="322" dur="0.8s" begin="1.09s" repeatCount="indefinite"/></line>
+  <line x1="134" y1="278" x2="131" y2="290" stroke="#58A6FF" stroke-width="0.8" opacity="0.2"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="y2" from="-8" to="312" dur="0.8s" begin="0.0s" repeatCount="indefinite"/></line>
+  <line x1="804" y1="130" x2="801" y2="153" stroke="#58A6FF" stroke-width="0.8" opacity="0.33"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.17s" repeatCount="indefinite"/><animate attributeName="y2" from="3" to="323" dur="0.8s" begin="1.17s" repeatCount="indefinite"/></line>
+  <line x1="323" y1="240" x2="320" y2="264" stroke="#58A6FF" stroke-width="0.8" opacity="0.25"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.87s" repeatCount="indefinite"/><animate attributeName="y2" from="4" to="324" dur="0.8s" begin="0.87s" repeatCount="indefinite"/></line>
+  <line x1="669" y1="115" x2="666" y2="126" stroke="#58A6FF" stroke-width="0.8" opacity="0.31"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.32s" repeatCount="indefinite"/><animate attributeName="y2" from="-9" to="311" dur="0.8s" begin="0.32s" repeatCount="indefinite"/></line>
+  <line x1="709" y1="235" x2="706" y2="255" stroke="#58A6FF" stroke-width="0.8" opacity="0.3"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.82s" repeatCount="indefinite"/><animate attributeName="y2" from="0" to="320" dur="0.8s" begin="0.82s" repeatCount="indefinite"/></line>
+  <line x1="1152" y1="233" x2="1149" y2="251" stroke="#58A6FF" stroke-width="0.8" opacity="0.27"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="y2" from="-2" to="318" dur="0.8s" begin="0.0s" repeatCount="indefinite"/></line>
+  <line x1="480" y1="24" x2="477" y2="39" stroke="#58A6FF" stroke-width="0.8" opacity="0.38"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.15s" repeatCount="indefinite"/><animate attributeName="y2" from="-5" to="315" dur="0.8s" begin="1.15s" repeatCount="indefinite"/></line>
+  <line x1="347" y1="132" x2="344" y2="146" stroke="#58A6FF" stroke-width="0.8" opacity="0.27"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.04s" repeatCount="indefinite"/><animate attributeName="y2" from="-6" to="314" dur="0.8s" begin="0.04s" repeatCount="indefinite"/></line>
+  <line x1="1030" y1="200" x2="1027" y2="214" stroke="#58A6FF" stroke-width="0.8" opacity="0.33"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.46s" repeatCount="indefinite"/><animate attributeName="y2" from="-6" to="314" dur="0.8s" begin="1.46s" repeatCount="indefinite"/></line>
+  <line x1="158" y1="171" x2="155" y2="181" stroke="#58A6FF" stroke-width="0.8" opacity="0.38"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.35s" repeatCount="indefinite"/><animate attributeName="y2" from="-10" to="310" dur="0.8s" begin="1.35s" repeatCount="indefinite"/></line>
+  <line x1="962" y1="0" x2="959" y2="24" stroke="#58A6FF" stroke-width="0.8" opacity="0.24"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="0.44s" repeatCount="indefinite"/><animate attributeName="y2" from="4" to="324" dur="0.8s" begin="0.44s" repeatCount="indefinite"/></line>
+  <line x1="1189" y1="112" x2="1186" y2="135" stroke="#58A6FF" stroke-width="0.8" opacity="0.16"><animate attributeName="y1" from="-20" to="300" dur="0.8s" begin="1.17s" repeatCount="indefinite"/><animate attributeName="y2" from="3" to="323" dur="0.8s" begin="1.17s" repeatCount="indefinite"/></line>
 
   <!-- Text overlay -->
   <text class="name-text" x="600" y="108" text-anchor="middle">Zakir Jiwani</text>
   <text class="sub-text" x="600" y="130" text-anchor="middle">PHILADELPHIA, PA</text>
-  <text class="weather-text" x="1180" y="16" text-anchor="end">59°F  Overcast</text>
-  <text class="weather-text" x="1180" y="30" text-anchor="end">7:41 PM ET</text>
+  <text class="weather-text" x="1180" y="16" text-anchor="end">58°F  Moderate Drizzle</text>
+  <text class="weather-text" x="1180" y="30" text-anchor="end">8:31 PM ET</text>
   </g>
 </svg>
