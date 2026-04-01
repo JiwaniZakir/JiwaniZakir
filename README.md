@@ -16,21 +16,17 @@
 
 <p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
-<!-- ═══════════════════════ ABOUT + STATS ═══════════════════════ -->
-
 <table>
 <tr>
 <td width="55%" valign="top">
 
-### About Me
+### About
 
 Building **autonomous AI systems** — multi-agent orchestration, RAG pipelines, and graph intelligence that run 24/7
 
 Founder of **[The Foundry PHL](https://thefoundryphl.com)** — nonprofit empowering young founders on the East Coast
 
 Studying **Computer Science** at **Drexel University**
-
-Shipping research to production — ReAct, Self-RAG, Constitutional AI
 
 <br/>
 
@@ -56,11 +52,6 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
 <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white"/>
 
-**Frontend** &nbsp;
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
-
 **Infra** &nbsp;
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
@@ -69,7 +60,7 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 </td>
 <td width="45%" valign="top">
 
-### At a Glance
+### Stats
 
 <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&border_radius=10&count_private=true&icon_color=58A6FF&title_color=58A6FF&include_all_commits=true&rank_icon=percentile" width="100%"/>
 
@@ -89,8 +80,6 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 
 <p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
-<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
-
 <div align="center">
 
 ### What I've Built
@@ -99,7 +88,6 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 
 <br/>
 
-<!-- Row 1: Aegis + Partnerships OS -->
 <p align="center">
 <a href="https://github.com/JiwaniZakir/aegis">
 <img src="./assets/projects/aegis.svg" width="49%" alt="Aegis — Personal Intelligence Platform"/>
@@ -110,7 +98,6 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 </a>
 </p>
 
-<!-- Row 2: Sentinel + Lattice -->
 <p align="center">
 <a href="https://github.com/JiwaniZakir/sentinel">
 <img src="./assets/projects/sentinel.svg" width="49%" alt="Sentinel — AI Community Management Bot"/>
@@ -121,7 +108,6 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 </a>
 </p>
 
-<!-- Row 3: EVITA + Spectra -->
 <p align="center">
 <a href="https://github.com/JiwaniZakir/evictionchatbot">
 <img src="./assets/projects/evita.svg" width="49%" alt="EVITA — AI Legal Assistant for Tenants"/>
@@ -136,38 +122,30 @@ Shipping research to production — ReAct, Self-RAG, Constitutional AI
 
 <p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
-<!-- ═══════════════════════════ OPEN SOURCE ═══════════════════════════ -->
-
 <div align="center">
 
 ### Open Source Contributions
 
+*Bug fixes and features across major AI/ML projects*
+
 <br/>
 
-<img src="./assets/contributions.svg" alt="Open Source Contributions — LangChain, Microsoft GraphRAG, OpenClaw, and more" width="100%"/>
+| Project | Stars | PRs |
+|---------|:-----:|-----|
+| [**LangChain**](https://github.com/langchain-ai/langchain) · LLM application framework | ⭐ 132K | [#35556](https://github.com/langchain-ai/langchain/pull/35556) · [#35528](https://github.com/langchain-ai/langchain/pull/35528) · [#35484](https://github.com/langchain-ai/langchain/pull/35484) |
+| [**LiteLLM**](https://github.com/BerriAI/litellm) · Universal LLM API | ⭐ 42K | [#23346](https://github.com/BerriAI/litellm/pull/23346) |
+| [**Poetry**](https://github.com/python-poetry/poetry) · Python dependency management | ⭐ 34K | [#10767](https://github.com/python-poetry/poetry/pull/10767) |
+| [**GraphRAG**](https://github.com/microsoft/graphrag) · Microsoft graph RAG | ⭐ 32K | [#2262](https://github.com/microsoft/graphrag/pull/2262) |
+| [**LangGraph**](https://github.com/langchain-ai/langgraph) · Multi-agent orchestration | ⭐ 28K | [#7013](https://github.com/langchain-ai/langgraph/pull/7013) |
+| [**Cognee**](https://github.com/topoteretes/cognee) · Knowledge graph memory | ⭐ 15K | [#2263](https://github.com/topoteretes/cognee/pull/2263) |
+| [**DeepEval**](https://github.com/confident-ai/deepeval) · LLM evaluation | ⭐ 14K | [#2527](https://github.com/confident-ai/deepeval/pull/2527) |
 
-<br/><br/>
+<br/>
 
-<a href="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats?user_id=108548454" target="_blank">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=108548454&image_size=auto&color_scheme=dark" width="100%">
-<img src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=108548454&image_size=auto&color_scheme=light" width="100%"/>
-</picture>
-</a>
-
-<br/><br/>
-
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" width="100%">
-<img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Graph" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JiwaniZakir/JiwaniZakir/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JiwaniZakir/JiwaniZakir/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/JiwaniZakir/JiwaniZakir/output/github-contribution-grid-snake.svg">
 </picture>
 
 </div>
-
-<br/>
-
-<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
-
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
-</p>
