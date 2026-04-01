@@ -21,6 +21,14 @@
 - 🎓 **Computer Science** @ Drexel University
 - 📫 zj77@drexel.edu
 
+### 📫 want to connect?
+
+👇 Hit in your console or terminal
+
+```bash
+npx zakirjiwani
+```
+
 # 🎫 projects
 
 - AI Infrastructure
@@ -47,13 +55,13 @@
 
 - ⚙️ infra: ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-> stats
+> languages
 
-<div align="center">
-  <img height="180px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&count_private=true&icon_color=58A6FF&title_color=58A6FF&include_all_commits=true&rank_icon=percentile"/>
-  &nbsp;
-  <img height="180px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=JiwaniZakir&layout=compact&theme=github_dark&hide_border=true&langs_count=8&title_color=58A6FF"/>
-</div>
+<!--START_SECTION:languages-->
+```text
+Fetching data...
+```
+<!--END_SECTION:languages-->
 
 # 🌐 open source
 
@@ -89,5 +97,5 @@
   <a href="https://linkedin.com/in/zakirjiwani"><img src="https://img.shields.io/badge/LinkedIn-zakirjiwani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>&nbsp;
   <a href="https://x.com/jiwzakir"><img src="https://img.shields.io/badge/X-@jiwzakir-000000?style=for-the-badge&logo=x&logoColor=white"/></a>&nbsp;
   <a href="https://thefoundryphl.com"><img src="https://img.shields.io/badge/The_Foundry_PHL-thefoundryphl.com-FF6B35?style=for-the-badge&logoColor=white"/></a>&nbsp;
-  <a href="mailto:zj77@drexel.edu"><img src="https://img.shields.io/badge/Email-zj77@drexel.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="mailto:zj77@drexel.edu"><img src="https://img.shields.io/badge/Email-zj77@drexir.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 </p>
