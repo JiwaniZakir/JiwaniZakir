@@ -85,6 +85,9 @@
 
 # 🌱 social
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=JiwaniZakir&theme=darkhub&no-frame=true&column=6&margin-w=10"/>
-</div>
+<p align="center">
+  <a href="https://linkedin.com/in/zakirjiwani"><img src="https://img.shields.io/badge/LinkedIn-zakirjiwani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>&nbsp;
+  <a href="https://x.com/jiwzakir"><img src="https://img.shields.io/badge/X-@jiwzakir-000000?style=for-the-badge&logo=x&logoColor=white"/></a>&nbsp;
+  <a href="https://thefoundryphl.com"><img src="https://img.shields.io/badge/The_Foundry_PHL-thefoundryphl.com-FF6B35?style=for-the-badge&logoColor=white"/></a>&nbsp;
+  <a href="mailto:zj77@drexel.edu"><img src="https://img.shields.io/badge/Email-zj77@drexel.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
