@@ -59,7 +59,11 @@ npx zakirjiwani
 
 <!--START_SECTION:languages-->
 ```text
-Fetching data...
+Python                   █████████████░░░░░░░░░░░░   53.11 %
+TypeScript               ████████░░░░░░░░░░░░░░░░░   32.54 %
+JavaScript               ██░░░░░░░░░░░░░░░░░░░░░░░    8.90 %
+MDX                      █░░░░░░░░░░░░░░░░░░░░░░░░    5.40 %
+Mako                     ░░░░░░░░░░░░░░░░░░░░░░░░░    0.05 %
 ```
 <!--END_SECTION:languages-->
 
