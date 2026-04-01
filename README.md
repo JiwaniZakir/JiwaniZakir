@@ -12,6 +12,10 @@
 <a href="mailto:zj77@drexel.edu"><img src="https://img.shields.io/badge/Email-zj77@drexel.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
+<p align="center">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=JiwaniZakir.JiwaniZakir&left_color=gray&right_color=58A6FF&left_text=profile%20views" alt="profile views"/>
+</p>
+
 ---
 
 # 🚀 about
