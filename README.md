@@ -12,10 +12,6 @@
 <a href="mailto:zj77@drexel.edu"><img src="https://img.shields.io/badge/Email-zj77@drexel.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
-<p align="center">
-<img src="https://visitor-badge.laobi.icu/badge?page_id=JiwaniZakir.JiwaniZakir&left_color=gray&right_color=58A6FF&left_text=profile%20views" alt="profile views"/>
-</p>
-
 ---
 
 # 🚀 about
@@ -24,14 +20,6 @@
 - 🏢 Founder @ **[The Foundry PHL](https://thefoundryphl.com)** — nonprofit empowering young founders on the East Coast
 - 🎓 **Computer Science** @ Drexel University
 - 📫 zj77@drexel.edu
-
-### 📫 want to connect?
-
-👇 Hit in your console or terminal
-
-```bash
-npx zakirjiwani
-```
 
 # 🎫 projects
 
@@ -44,6 +32,11 @@ npx zakirjiwani
   - [🔬 Spectra](https://github.com/JiwaniZakir/spectra) — systematic RAG pipeline evaluation framework
 - Business Tools
   - [🤝 Partnerships OS](https://github.com/JiwaniZakir/Partnerships_OS) — enterprise partnership intelligence platform
+
+# 🔨 currently building
+
+- [Aegis](https://github.com/JiwaniZakir/aegis) — self-hosted personal intelligence platform
+- [osbot](https://github.com/JiwaniZakir/osbot) — autonomous open-source contribution agent
 
 # 🛠 tech stack
 
@@ -59,17 +52,13 @@ npx zakirjiwani
 
 - ⚙️ infra: ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-> languages
+> stats
 
-<!--START_SECTION:languages-->
-```text
-Python                   █████████████░░░░░░░░░░░░   53.11 %
-TypeScript               ████████░░░░░░░░░░░░░░░░░   32.54 %
-JavaScript               ██░░░░░░░░░░░░░░░░░░░░░░░    8.90 %
-MDX                      █░░░░░░░░░░░░░░░░░░░░░░░░    5.40 %
-Mako                     ░░░░░░░░░░░░░░░░░░░░░░░░░    0.05 %
-```
-<!--END_SECTION:languages-->
+<div align="center">
+  <img height="180px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=JiwaniZakir&show_icons=true&theme=github_dark&hide_border=true&count_private=true&icon_color=58A6FF&title_color=58A6FF&include_all_commits=true&rank_icon=percentile"/>
+  &nbsp;
+  <img height="180px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=JiwaniZakir&layout=compact&theme=github_dark&hide_border=true&langs_count=8&title_color=58A6FF"/>
+</div>
 
 # 🌐 open source
 
@@ -105,5 +94,5 @@ Mako                     ░░░░░░░░░░░░░░░░░░�
   <a href="https://linkedin.com/in/zakirjiwani"><img src="https://img.shields.io/badge/LinkedIn-zakirjiwani-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>&nbsp;
   <a href="https://x.com/jiwzakir"><img src="https://img.shields.io/badge/X-@jiwzakir-000000?style=for-the-badge&logo=x&logoColor=white"/></a>&nbsp;
   <a href="https://thefoundryphl.com"><img src="https://img.shields.io/badge/The_Foundry_PHL-thefoundryphl.com-FF6B35?style=for-the-badge&logoColor=white"/></a>&nbsp;
-  <a href="mailto:zj77@drexel.edu"><img src="https://img.shields.io/badge/Email-zj77@drexir.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="mailto:zj77@drexel.edu"><img src="https://img.shields.io/badge/Email-zj77@drexel.edu-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 </p>
