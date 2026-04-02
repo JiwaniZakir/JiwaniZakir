@@ -62,6 +62,7 @@
 
 # 🌐 open source
 
+<!--START_SECTION:oss-->
 *Bug fixes and features across major AI/ML projects*
 
 | Project | Stars | PRs |
@@ -73,6 +74,7 @@
 | [**LangGraph**](https://github.com/langchain-ai/langgraph) · Multi-agent orchestration | ⭐ 28K | [#7013](https://github.com/langchain-ai/langgraph/pull/7013) |
 | [**Cognee**](https://github.com/topoteretes/cognee) · Knowledge graph memory | ⭐ 15K | [#2263](https://github.com/topoteretes/cognee/pull/2263) |
 | [**DeepEval**](https://github.com/confident-ai/deepeval) · LLM evaluation | ⭐ 14K | [#2527](https://github.com/confident-ai/deepeval/pull/2527) |
+<!--END_SECTION:oss-->
 
 # 🔭 activity
 
