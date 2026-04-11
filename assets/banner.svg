@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0b091e"/>
-      <stop offset="50%" stop-color="#24204a"/>
-      <stop offset="100%" stop-color="#3f375d"/>
+      <stop offset="0%" stop-color="#030812"/>
+      <stop offset="40%" stop-color="#08101e"/>
+      <stop offset="100%" stop-color="#101b35"/>
     </linearGradient>
 
     <!-- Building face gradients (3D lighting - light from right) -->
@@ -113,27 +113,49 @@
   <rect width="1200" height="300" fill="url(#sky)"/>
 
   <!-- Celestial -->
-
-  <circle class="s1" cx="248" cy="11" r="1.4" fill="#fff" opacity="0.5"/>
-  <circle class="s2" cx="521" cy="62" r="0.6" fill="#fff" opacity="0.5"/>
-  <circle class="s3" cx="229" cy="27" r="1.2" fill="#fff" opacity="0.5"/>
-  <circle class="s4" cx="85" cy="12" r="0.5" fill="#fff" opacity="0.5"/>
-  <circle class="s5" cx="496" cy="134" r="1.2" fill="#fff" opacity="0.5"/>
-  <circle class="s1" cx="1169" cy="55" r="1.4" fill="#fff" opacity="0.5"/>
-  <circle class="s2" cx="1136" cy="112" r="0.7" fill="#fff" opacity="0.5"/>
-  <circle class="s3" cx="589" cy="6" r="1.5" fill="#fff" opacity="0.5"/>
-  <circle class="s4" cx="346" cy="113" r="0.9" fill="#fff" opacity="0.5"/>
-  <circle class="s5" cx="338" cy="60" r="1.7" fill="#fff" opacity="0.5"/>
-  <circle class="s1" cx="709" cy="31" r="0.5" fill="#fff" opacity="0.5"/>
-  <circle class="s2" cx="218" cy="96" r="1.6" fill="#fff" opacity="0.5"/>
-  <circle class="s3" cx="561" cy="16" r="1.4" fill="#fff" opacity="0.5"/>
-  <circle class="s4" cx="1118" cy="36" r="1.8" fill="#fff" opacity="0.5"/>
-  <circle class="s5" cx="795" cy="25" r="1.2" fill="#fff" opacity="0.5"/>
-  <circle class="s1" cx="760" cy="54" r="1.4" fill="#fff" opacity="0.5"/>
-  <circle class="s2" cx="113" cy="63" r="1.5" fill="#fff" opacity="0.5"/>
-  <circle class="s3" cx="183" cy="64" r="1.6" fill="#fff" opacity="0.5"/>
-  <circle class="s4" cx="798" cy="76" r="1.0" fill="#fff" opacity="0.5"/>
-  <circle class="s5" cx="767" cy="46" r="0.9" fill="#fff" opacity="0.5"/>
+  <circle cx="1000" cy="45" r="16" fill="#e8e8e8" opacity="0.85"/>
+  <circle cx="993" cy="40" r="14" fill="url(#sky)" opacity="0.8"/>
+  <circle cx="1000" cy="45" r="25" fill="#e8e8e8" opacity="0.05" filter="url(#glowSoft)"/>
+  <circle class="s1" cx="248" cy="11" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="521" cy="62" r="0.6" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="229" cy="27" r="1.2" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="85" cy="12" r="0.5" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="496" cy="134" r="1.2" fill="#fff" opacity="0.8"/>
+  <circle class="s1" cx="1169" cy="55" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="1136" cy="112" r="0.7" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="589" cy="6" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="346" cy="113" r="0.9" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="338" cy="60" r="1.7" fill="#fff" opacity="0.8"/>
+  <circle class="s1" cx="709" cy="31" r="0.5" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="218" cy="96" r="1.6" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="561" cy="16" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="1118" cy="36" r="1.8" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="795" cy="25" r="1.2" fill="#fff" opacity="0.8"/>
+  <circle class="s1" cx="760" cy="54" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="113" cy="63" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="183" cy="64" r="1.6" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="798" cy="76" r="1.0" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="767" cy="46" r="0.9" fill="#fff" opacity="0.8"/>
+  <circle class="s1" cx="449" cy="73" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="166" cy="48" r="1.1" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="521" cy="46" r="1.0" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="572" cy="61" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="134" cy="63" r="1.6" fill="#fff" opacity="0.8"/>
+  <circle class="s1" cx="666" cy="107" r="0.8" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="452" cy="85" r="0.7" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="1042" cy="106" r="1.6" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="959" cy="41" r="0.8" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="525" cy="72" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s1" cx="897" cy="107" r="0.9" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="303" cy="135" r="1.1" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="116" cy="33" r="0.6" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="347" cy="113" r="1.2" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="808" cy="102" r="1.2" fill="#fff" opacity="0.8"/>
+  <circle class="s1" cx="978" cy="140" r="0.8" fill="#fff" opacity="0.8"/>
+  <circle class="s2" cx="1153" cy="7" r="1.4" fill="#fff" opacity="0.8"/>
+  <circle class="s3" cx="254" cy="73" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle class="s4" cx="716" cy="33" r="0.8" fill="#fff" opacity="0.8"/>
+  <circle class="s5" cx="343" cy="121" r="0.4" fill="#fff" opacity="0.8"/>
   <g opacity="0.25" class="cloud1">
     <ellipse cx="160" cy="50" rx="60" ry="16" fill="#6B7585"/>
     <ellipse cx="200" cy="42" rx="45" ry="14" fill="#7B8595"/>
@@ -999,7 +1021,7 @@
   <!-- Text overlay -->
   <text class="name-text" x="600" y="108" text-anchor="middle">Zakir Jiwani</text>
   <text class="sub-text" x="600" y="130" text-anchor="middle">PHILADELPHIA, PA</text>
-  <text class="weather-text" x="1180" y="16" text-anchor="end">60°F  Partly Cloudy</text>
-  <text class="weather-text" x="1180" y="30" text-anchor="end">8:34 PM ET</text>
+  <text class="weather-text" x="1180" y="16" text-anchor="end">57°F  Overcast</text>
+  <text class="weather-text" x="1180" y="30" text-anchor="end">9:37 PM ET</text>
   </g>
 </svg>
