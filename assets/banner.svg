@@ -769,7 +769,7 @@
   <!-- Text overlay -->
   <text class="name-text" x="600" y="108" text-anchor="middle">Zakir Jiwani</text>
   <text class="sub-text" x="600" y="130" text-anchor="middle">PHILADELPHIA, PA</text>
-  <text class="weather-text" x="1180" y="16" text-anchor="end">55°F  Clear Sky</text>
-  <text class="weather-text" x="1180" y="30" text-anchor="end">11:15 AM ET</text>
+  <text class="weather-text" x="1180" y="16" text-anchor="end">57°F  Clear Sky</text>
+  <text class="weather-text" x="1180" y="30" text-anchor="end">11:45 AM ET</text>
   </g>
 </svg>
