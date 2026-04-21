@@ -18,7 +18,7 @@
 
 - 🤖 building **autonomous AI systems** — multi-agent orchestration, RAG pipelines, and graph intelligence that run 24/7
 - 🏢 Founder @ **[The Foundry PHL](https://thefoundryphl.com)** — nonprofit empowering young founders on the East Coast
-- 🎓 **Computer Science** @ Drexel University
+- 🎓 **Electrical & Computer Engineering** @ Drexel University
 - 📫 zj77@drexel.edu
 
 # 🎫 projects
