@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0f0c29"/>
-      <stop offset="50%" stop-color="#302b63"/>
-      <stop offset="100%" stop-color="#544a7d"/>
+      <stop offset="0%" stop-color="#0b091e"/>
+      <stop offset="50%" stop-color="#24204a"/>
+      <stop offset="100%" stop-color="#3f375d"/>
     </linearGradient>
 
     <!-- Building face gradients (3D lighting - light from right) -->
@@ -134,7 +134,21 @@
   <circle class="s3" cx="183" cy="64" r="1.6" fill="#fff" opacity="0.5"/>
   <circle class="s4" cx="798" cy="76" r="1.0" fill="#fff" opacity="0.5"/>
   <circle class="s5" cx="767" cy="46" r="0.9" fill="#fff" opacity="0.5"/>
-
+  <g opacity="0.25" class="cloud1">
+    <ellipse cx="160" cy="50" rx="60" ry="16" fill="#6B7585"/>
+    <ellipse cx="200" cy="42" rx="45" ry="14" fill="#7B8595"/>
+    <ellipse cx="130" cy="47" rx="35" ry="12" fill="#6B7585"/>
+    <ellipse cx="175" cy="38" rx="30" ry="10" fill="#8B959E"/>
+  </g>
+  <g opacity="0.18" class="cloud2">
+    <ellipse cx="780" cy="35" rx="55" ry="14" fill="#6B7585"/>
+    <ellipse cx="815" cy="28" rx="40" ry="12" fill="#7B8595"/>
+    <ellipse cx="755" cy="32" rx="30" ry="10" fill="#6B7585"/>
+  </g>
+  <g opacity="0.15" class="cloud1">
+    <ellipse cx="1050" cy="55" rx="45" ry="12" fill="#6B7585"/>
+    <ellipse cx="1080" cy="49" rx="32" ry="10" fill="#7B8595"/>
+  </g>
 
   <!-- Atmosphere -->
   <rect x="0" y="0" width="1200" height="300" fill="url(#cityGlow)"/>
@@ -985,7 +999,7 @@
   <!-- Text overlay -->
   <text class="name-text" x="600" y="108" text-anchor="middle">Zakir Jiwani</text>
   <text class="sub-text" x="600" y="130" text-anchor="middle">PHILADELPHIA, PA</text>
-  <text class="weather-text" x="1180" y="16" text-anchor="end">66°F  Clear Sky</text>
-  <text class="weather-text" x="1180" y="30" text-anchor="end">7:21 PM ET</text>
+  <text class="weather-text" x="1180" y="16" text-anchor="end">64°F  Partly Cloudy</text>
+  <text class="weather-text" x="1180" y="30" text-anchor="end">7:48 PM ET</text>
   </g>
 </svg>
