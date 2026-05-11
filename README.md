@@ -68,12 +68,12 @@
 | Project | Stars | PRs |
 |---------|:-----:|-----|
 | [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 160K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
-| [**dify**](https://github.com/langgenius/dify) · Production-ready platform for agentic workflow development. | ⭐ 140K | [#33702](https://github.com/langgenius/dify/pull/33702) |
-| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 132K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
+| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 143K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
+| [**dify**](https://github.com/langgenius/dify) · Production-ready platform for agentic workflow development. | ⭐ 141K | [#33702](https://github.com/langgenius/dify/pull/33702) |
 | [**fish-speech**](https://github.com/fishaudio/fish-speech) · SOTA Open Source TTS | ⭐ 30K | [#1257](https://github.com/fishaudio/fish-speech/pull/1257) |
+| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · "DeepTutor: Agent-Native Personalized Learning Assistant" | ⭐ 24K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
 | [**pytorch_geometric**](https://github.com/pyg-team/pytorch_geometric) · Graph Neural Network Library for PyTorch | ⭐ 24K | [#10645](https://github.com/pyg-team/pytorch_geometric/pull/10645) |
-| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · "DeepTutor: Agent-Native Personalized Learning Assistant" | ⭐ 23K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
-| [**QwenPaw**](https://github.com/agentscope-ai/QwenPaw) · Your Personal AI Assistant; easy to install, deploy on your  | ⭐ 16K | [#1629](https://github.com/agentscope-ai/QwenPaw/pull/1629) |
+| [**QwenPaw**](https://github.com/agentscope-ai/QwenPaw) · Your Personal AI Assistant; easy to install, deploy on your  | ⭐ 17K | [#1629](https://github.com/agentscope-ai/QwenPaw/pull/1629) |
 | [**ms-swift**](https://github.com/modelscope/ms-swift) · Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qw | ⭐ 14K | [#9014](https://github.com/modelscope/ms-swift/pull/9014) |
 | [**prowler**](https://github.com/prowler-cloud/prowler) · Prowler is the world’s most widely used open-source cloud se | ⭐ 14K | [#10355](https://github.com/prowler-cloud/prowler/pull/10355) |
 | [**tvm**](https://github.com/apache/tvm) · Open Machine Learning Compiler Framework | ⭐ 13K | [#19407](https://github.com/apache/tvm/pull/19407) |
@@ -82,13 +82,13 @@
 | [**angr**](https://github.com/angr/angr) · A powerful and user-friendly binary analysis platform! | ⭐ 9K | [#6265](https://github.com/angr/angr/pull/6265) |
 | [**ghostfolio**](https://github.com/ghostfolio/ghostfolio) · Open Source Wealth Management Software. Angular + NestJS + P | ⭐ 8K | [#6598](https://github.com/ghostfolio/ghostfolio/pull/6598) |
 | [**ida-pro-mcp**](https://github.com/mrexodia/ida-pro-mcp) · AI-powered reverse engineering assistant that bridges IDA Pr | ⭐ 8K | [#326](https://github.com/mrexodia/ida-pro-mcp/pull/326) |
+| [**local-deep-research**](https://github.com/LearningCircuit/local-deep-research) ·  ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all | ⭐ 7K | [#3359](https://github.com/LearningCircuit/local-deep-research/pull/3359) |
 | [**yn**](https://github.com/purocean/yn) · A highly extensible Markdown editor. Version control, AI Cop | ⭐ 7K | [#469](https://github.com/purocean/yn/pull/469) |
+| [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 6K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
 | [**rllm**](https://github.com/rllm-org/rllm) · Democratizing Reinforcement Learning for LLMs | ⭐ 5K | [#471](https://github.com/rllm-org/rllm/pull/471) |
-| [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 5K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
-| [**AReaL**](https://github.com/inclusionAI/AReaL) · The RL Bridge for LLM-based Agent Applications. Made Simple  | ⭐ 5K | [#1139](https://github.com/inclusionAI/AReaL/pull/1139) |
+| [**AReaL**](https://github.com/areal-project/AReaL) · The RL Bridge for LLM-based Agent Applications. Made Simple  | ⭐ 5K | [#1139](https://github.com/areal-project/AReaL/pull/1139) |
 | [**Templater**](https://github.com/SilentVoid13/Templater) · A template plugin for obsidian | ⭐ 5K | [#1709](https://github.com/SilentVoid13/Templater/pull/1709) |
 | [**structlog**](https://github.com/hynek/structlog) · Simple, powerful, and fast logging for Python. | ⭐ 5K | [#795](https://github.com/hynek/structlog/pull/795) |
-| [**local-deep-research**](https://github.com/LearningCircuit/local-deep-research) · Local Deep Research achieves ~95% on SimpleQA benchmark (tes | ⭐ 5K | [#3359](https://github.com/LearningCircuit/local-deep-research/pull/3359) |
 | [**mission-control**](https://github.com/builderz-labs/mission-control) · Self-hosted AI agent orchestration platform: dispatch tasks, | ⭐ 5K | [#595](https://github.com/builderz-labs/mission-control/pull/595) |
 | [**PPTAgent**](https://github.com/icip-cas/PPTAgent) · An Agentic Framework for Reflective PowerPoint Generation | ⭐ 4K | [#222](https://github.com/icip-cas/PPTAgent/pull/222) |
 | [**openchamber**](https://github.com/openchamber/openchamber) · Desktop and web interface for OpenCode AI agent | ⭐ 4K | [#799](https://github.com/openchamber/openchamber/pull/799) |
@@ -104,6 +104,7 @@
 | [**autobe**](https://github.com/wrtnlabs/autobe) · AI Vibe Coding Agent of TS backend server, enhanced by compi | ⭐ 1K | [#1293](https://github.com/wrtnlabs/autobe/pull/1293) |
 | [**mlforecast**](https://github.com/Nixtla/mlforecast) · Scalable machine 🤖 learning for time series forecasting. | ⭐ 1K | [#624](https://github.com/Nixtla/mlforecast/pull/624) |
 | [**chat-js**](https://github.com/FranciscoMoretti/chat-js) · Production-ready AI chat. Start here and make it your own. F | ⭐ 1K | [#183](https://github.com/FranciscoMoretti/chat-js/pull/183) |
+| [**ai-setup**](https://github.com/caliber-ai-org/ai-setup) · Continuously sync your AI setups with one command. Codebase  | ⭐ 1K | [#43](https://github.com/caliber-ai-org/ai-setup/pull/43) · [#44](https://github.com/caliber-ai-org/ai-setup/pull/44) · [#48](https://github.com/caliber-ai-org/ai-setup/pull/48) |
 <!--END_SECTION:oss-->
 
 # 🔭 activity
