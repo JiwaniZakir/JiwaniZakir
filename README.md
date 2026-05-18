@@ -67,9 +67,9 @@
 
 | Project | Stars | PRs |
 |---------|:-----:|-----|
-| [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 160K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
-| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 143K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
-| [**dify**](https://github.com/langgenius/dify) · Production-ready platform for agentic workflow development. | ⭐ 141K | [#33702](https://github.com/langgenius/dify/pull/33702) |
+| [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 161K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
+| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 155K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
+| [**dify**](https://github.com/langgenius/dify) · Production-ready platform for agentic workflow development. | ⭐ 142K | [#33702](https://github.com/langgenius/dify/pull/33702) |
 | [**fish-speech**](https://github.com/fishaudio/fish-speech) · SOTA Open Source TTS | ⭐ 30K | [#1257](https://github.com/fishaudio/fish-speech/pull/1257) |
 | [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · "DeepTutor: Agent-Native Personalized Learning Assistant" | ⭐ 24K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
 | [**pytorch_geometric**](https://github.com/pyg-team/pytorch_geometric) · Graph Neural Network Library for PyTorch | ⭐ 24K | [#10645](https://github.com/pyg-team/pytorch_geometric/pull/10645) |
@@ -80,16 +80,16 @@
 | [**fiftyone**](https://github.com/voxel51/fiftyone) · Refine high-quality datasets and visual AI models | ⭐ 11K | [#7309](https://github.com/voxel51/fiftyone/pull/7309) |
 | [**inference**](https://github.com/xorbitsai/inference) · Swap GPT for any LLM by changing a single line of code. Xinf | ⭐ 9K | [#4757](https://github.com/xorbitsai/inference/pull/4757) |
 | [**angr**](https://github.com/angr/angr) · A powerful and user-friendly binary analysis platform! | ⭐ 9K | [#6265](https://github.com/angr/angr/pull/6265) |
+| [**ida-pro-mcp**](https://github.com/mrexodia/ida-pro-mcp) · AI-powered reverse engineering assistant that bridges IDA Pr | ⭐ 9K | [#326](https://github.com/mrexodia/ida-pro-mcp/pull/326) |
 | [**ghostfolio**](https://github.com/ghostfolio/ghostfolio) · Open Source Wealth Management Software. Angular + NestJS + P | ⭐ 8K | [#6598](https://github.com/ghostfolio/ghostfolio/pull/6598) |
-| [**ida-pro-mcp**](https://github.com/mrexodia/ida-pro-mcp) · AI-powered reverse engineering assistant that bridges IDA Pr | ⭐ 8K | [#326](https://github.com/mrexodia/ida-pro-mcp/pull/326) |
-| [**local-deep-research**](https://github.com/LearningCircuit/local-deep-research) ·  ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all | ⭐ 7K | [#3359](https://github.com/LearningCircuit/local-deep-research/pull/3359) |
+| [**local-deep-research**](https://github.com/LearningCircuit/local-deep-research) ·  ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all | ⭐ 8K | [#3359](https://github.com/LearningCircuit/local-deep-research/pull/3359) |
 | [**yn**](https://github.com/purocean/yn) · A highly extensible Markdown editor. Version control, AI Cop | ⭐ 7K | [#469](https://github.com/purocean/yn/pull/469) |
 | [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 6K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
-| [**rllm**](https://github.com/rllm-org/rllm) · Democratizing Reinforcement Learning for LLMs | ⭐ 5K | [#471](https://github.com/rllm-org/rllm/pull/471) |
+| [**rllm**](https://github.com/rllm-org/rllm) · Democratizing Reinforcement Learning for LLMs | ⭐ 6K | [#471](https://github.com/rllm-org/rllm/pull/471) |
 | [**AReaL**](https://github.com/areal-project/AReaL) · The RL Bridge for LLM-based Agent Applications. Made Simple  | ⭐ 5K | [#1139](https://github.com/areal-project/AReaL/pull/1139) |
 | [**Templater**](https://github.com/SilentVoid13/Templater) · A template plugin for obsidian | ⭐ 5K | [#1709](https://github.com/SilentVoid13/Templater/pull/1709) |
-| [**structlog**](https://github.com/hynek/structlog) · Simple, powerful, and fast logging for Python. | ⭐ 5K | [#795](https://github.com/hynek/structlog/pull/795) |
 | [**mission-control**](https://github.com/builderz-labs/mission-control) · Self-hosted AI agent orchestration platform: dispatch tasks, | ⭐ 5K | [#595](https://github.com/builderz-labs/mission-control/pull/595) |
+| [**structlog**](https://github.com/hynek/structlog) · Simple, powerful, and fast logging for Python. | ⭐ 5K | [#795](https://github.com/hynek/structlog/pull/795) |
 | [**PPTAgent**](https://github.com/icip-cas/PPTAgent) · An Agentic Framework for Reflective PowerPoint Generation | ⭐ 4K | [#222](https://github.com/icip-cas/PPTAgent/pull/222) |
 | [**openchamber**](https://github.com/openchamber/openchamber) · Desktop and web interface for OpenCode AI agent | ⭐ 4K | [#799](https://github.com/openchamber/openchamber/pull/799) |
 | [**claude-devtools**](https://github.com/matt1398/claude-devtools) · The missing DevTools for Claude Code — inspect session logs, | ⭐ 3K | [#157](https://github.com/matt1398/claude-devtools/pull/157) |
@@ -97,10 +97,12 @@
 | [**pipeshub-ai**](https://github.com/pipeshub-ai/pipeshub-ai) · PipesHub is a fully extensible and explainable workplace AI  | ⭐ 3K | [#1923](https://github.com/pipeshub-ai/pipeshub-ai/pull/1923) |
 | [**torchmetrics**](https://github.com/Lightning-AI/torchmetrics) · Machine learning metrics for distributed, scalable PyTorch a | ⭐ 2K | [#3354](https://github.com/Lightning-AI/torchmetrics/pull/3354) |
 | [**kana-dojo**](https://github.com/lingdojo/kana-dojo) · Aesthetic, minimalist platform for learning Japanese inspire | ⭐ 2K | [#8815](https://github.com/lingdojo/kana-dojo/pull/8815) · [#8856](https://github.com/lingdojo/kana-dojo/pull/8856) · [#8890](https://github.com/lingdojo/kana-dojo/pull/8890) |
+| [**sagemaker-python-sdk**](https://github.com/aws/sagemaker-python-sdk) · A library for training and deploying machine learning models | ⭐ 2K | [#5704](https://github.com/aws/sagemaker-python-sdk/pull/5704) |
 | [**mflux**](https://github.com/filipstrand/mflux) · MLX native implementations of state-of-the-art generative im | ⭐ 2K | [#406](https://github.com/filipstrand/mflux/pull/406) |
+| [**dograh**](https://github.com/dograh-hq/dograh) · Open Source Voice Agent Platform | ⭐ 2K | [#241](https://github.com/dograh-hq/dograh/pull/241) |
 | [**learnhouse**](https://github.com/learnhouse/learnhouse) · The Next-gen Open Source learning platform for everyone ✨ | ⭐ 2K | [#705](https://github.com/learnhouse/learnhouse/pull/705) · [#726](https://github.com/learnhouse/learnhouse/pull/726) |
 | [**MiniOneRec**](https://github.com/AkaliKong/MiniOneRec) · Minimal reproduction of OneRec | ⭐ 2K | [#69](https://github.com/AkaliKong/MiniOneRec/pull/69) |
-| [**core**](https://github.com/RedPlanetHQ/core) · Your AI butler that get things done | ⭐ 2K | [#762](https://github.com/RedPlanetHQ/core/pull/762) |
+| [**core**](https://github.com/RedPlanetHQ/core) · Your personal AI OS | ⭐ 2K | [#762](https://github.com/RedPlanetHQ/core/pull/762) |
 | [**autobe**](https://github.com/wrtnlabs/autobe) · AI Vibe Coding Agent of TS backend server, enhanced by compi | ⭐ 1K | [#1293](https://github.com/wrtnlabs/autobe/pull/1293) |
 | [**mlforecast**](https://github.com/Nixtla/mlforecast) · Scalable machine 🤖 learning for time series forecasting. | ⭐ 1K | [#624](https://github.com/Nixtla/mlforecast/pull/624) |
 | [**chat-js**](https://github.com/FranciscoMoretti/chat-js) · Production-ready AI chat. Start here and make it your own. F | ⭐ 1K | [#183](https://github.com/FranciscoMoretti/chat-js/pull/183) |
