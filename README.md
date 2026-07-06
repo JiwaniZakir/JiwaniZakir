@@ -67,14 +67,14 @@
 
 | Project | Stars | PRs |
 |---------|:-----:|-----|
-| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 205K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
+| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 210K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
 | [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 162K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
-| [**dify**](https://github.com/langgenius/dify) · Production-ready platform for agentic workflow development. | ⭐ 147K | [#33702](https://github.com/langgenius/dify/pull/33702) |
+| [**dify**](https://github.com/langgenius/dify) · Production-ready platform for agentic workflow development. | ⭐ 148K | [#33702](https://github.com/langgenius/dify/pull/33702) |
 | [**fish-speech**](https://github.com/fishaudio/fish-speech) · SOTA Open Source TTS | ⭐ 31K | [#1257](https://github.com/fishaudio/fish-speech/pull/1257) |
 | [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · DeepTutor: Agent-native Personalized Tutoring. https://deept | ⭐ 25K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
 | [**pytorch_geometric**](https://github.com/pyg-team/pytorch_geometric) · Graph Neural Network Library for PyTorch | ⭐ 24K | [#10645](https://github.com/pyg-team/pytorch_geometric/pull/10645) |
-| [**mypy**](https://github.com/python/mypy) · Optional static typing for Python | ⭐ 20K | [#21511](https://github.com/python/mypy/pull/21511) |
-| [**QwenPaw**](https://github.com/agentscope-ai/QwenPaw) · Your Personal AI Assistant; easy to install, deploy on your  | ⭐ 20K | [#1629](https://github.com/agentscope-ai/QwenPaw/pull/1629) |
+| [**QwenPaw**](https://github.com/agentscope-ai/QwenPaw) · Your Personal AI Assistant; easy to install, deploy on your  | ⭐ 21K | [#1629](https://github.com/agentscope-ai/QwenPaw/pull/1629) |
+| [**mypy**](https://github.com/python/mypy) · Optional static typing for Python | ⭐ 21K | [#21511](https://github.com/python/mypy/pull/21511) |
 | [**ms-swift**](https://github.com/modelscope/ms-swift) · Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qw | ⭐ 15K | [#9014](https://github.com/modelscope/ms-swift/pull/9014) |
 | [**prowler**](https://github.com/prowler-cloud/prowler) · Prowler is the world’s most widely used open-source cloud se | ⭐ 14K | [#10355](https://github.com/prowler-cloud/prowler/pull/10355) |
 | [**tvm**](https://github.com/apache/tvm) · Open Machine Learning Compiler Framework | ⭐ 14K | [#19407](https://github.com/apache/tvm/pull/19407) |
@@ -89,12 +89,12 @@
 | [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 6K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
 | [**openchamber**](https://github.com/openchamber/openchamber) · Desktop and web interface for OpenCode AI agent | ⭐ 6K | [#799](https://github.com/openchamber/openchamber/pull/799) |
 | [**rllm**](https://github.com/rllm-org/rllm) · Democratizing Reinforcement Learning for LLMs | ⭐ 6K | [#471](https://github.com/rllm-org/rllm/pull/471) |
-| [**mission-control**](https://github.com/builderz-labs/mission-control) · Self-hosted AI agent orchestration platform: dispatch tasks, | ⭐ 5K | [#595](https://github.com/builderz-labs/mission-control/pull/595) |
+| [**mission-control**](https://github.com/builderz-labs/mission-control) · Self-hosted AI agent orchestration platform: dispatch tasks, | ⭐ 6K | [#595](https://github.com/builderz-labs/mission-control/pull/595) |
 | [**AReaL**](https://github.com/areal-project/AReaL) · The RL Bridge for LLM-based Agent Applications. Made Simple  | ⭐ 5K | [#1139](https://github.com/areal-project/AReaL/pull/1139) |
 | [**Templater**](https://github.com/SilentVoid13/Templater) · A template plugin for obsidian | ⭐ 5K | [#1709](https://github.com/SilentVoid13/Templater/pull/1709) |
 | [**structlog**](https://github.com/hynek/structlog) · Simple, powerful, and fast logging for Python. | ⭐ 5K | [#795](https://github.com/hynek/structlog/pull/795) |
-| [**PPTAgent**](https://github.com/icip-cas/PPTAgent) · An Agentic Framework for Reflective PowerPoint Generation | ⭐ 5K | [#222](https://github.com/icip-cas/PPTAgent/pull/222) |
 | [**dograh**](https://github.com/dograh-hq/dograh) · Open source voice AI platform. Self-hosted alternative to Va | ⭐ 5K | [#241](https://github.com/dograh-hq/dograh/pull/241) |
+| [**PPTAgent**](https://github.com/icip-cas/PPTAgent) · An Agentic Framework for Reflective PowerPoint Generation | ⭐ 5K | [#222](https://github.com/icip-cas/PPTAgent/pull/222) |
 | [**claude-devtools**](https://github.com/matt1398/claude-devtools) · The missing DevTools for Claude Code — inspect session logs, | ⭐ 4K | [#157](https://github.com/matt1398/claude-devtools/pull/157) |
 | [**badssl.com**](https://github.com/chromium/badssl.com) · :lock: Memorable site for testing clients against bad SSL co | ⭐ 3K | [#552](https://github.com/chromium/badssl.com/pull/552) |
 | [**pipeshub-ai**](https://github.com/pipeshub-ai/pipeshub-ai) · PipesHub is a fully extensible and explainable workplace AI  | ⭐ 3K | [#1923](https://github.com/pipeshub-ai/pipeshub-ai/pull/1923) |
@@ -104,8 +104,8 @@
 | [**sagemaker-python-sdk**](https://github.com/aws/sagemaker-python-sdk) · A library for training and deploying machine learning models | ⭐ 2K | [#5704](https://github.com/aws/sagemaker-python-sdk/pull/5704) |
 | [**mflux**](https://github.com/filipstrand/mflux) · MLX native implementations of state-of-the-art generative im | ⭐ 2K | [#406](https://github.com/filipstrand/mflux/pull/406) |
 | [**claude-code-tools**](https://github.com/pchalasani/claude-code-tools) · Practical productivity tools for Claude Code, Codex-CLI, and | ⭐ 2K | [#69](https://github.com/pchalasani/claude-code-tools/pull/69) |
-| [**learnhouse**](https://github.com/learnhouse/learnhouse) · The Next-gen Open Source learning platform for everyone ✨ | ⭐ 2K | [#705](https://github.com/learnhouse/learnhouse/pull/705) · [#726](https://github.com/learnhouse/learnhouse/pull/726) |
 | [**core**](https://github.com/RedPlanetHQ/core) · Your Personal AI OS | ⭐ 2K | [#762](https://github.com/RedPlanetHQ/core/pull/762) |
+| [**learnhouse**](https://github.com/learnhouse/learnhouse) · The Next-gen Open Source learning platform for everyone ✨ | ⭐ 2K | [#705](https://github.com/learnhouse/learnhouse/pull/705) · [#726](https://github.com/learnhouse/learnhouse/pull/726) |
 | [**MiniOneRec**](https://github.com/AkaliKong/MiniOneRec) · Minimal reproduction of OneRec | ⭐ 2K | [#69](https://github.com/AkaliKong/MiniOneRec/pull/69) |
 | [**autobe**](https://github.com/wrtnlabs/autobe) · AI Vibe Coding Agent of TS backend server, enhanced by compi | ⭐ 1K | [#1293](https://github.com/wrtnlabs/autobe/pull/1293) |
 | [**BitFun**](https://github.com/GCWing/BitFun) · BitFun is a desktop-grade Agent runtimeand a ready-to-use su | ⭐ 1K | [#414](https://github.com/GCWing/BitFun/pull/414) |
@@ -114,6 +114,7 @@
 | [**ai-setup**](https://github.com/caliber-ai-org/ai-setup) · Continuously sync your AI setups with one command. Codebase  | ⭐ 1K | [#43](https://github.com/caliber-ai-org/ai-setup/pull/43) · [#44](https://github.com/caliber-ai-org/ai-setup/pull/44) · [#48](https://github.com/caliber-ai-org/ai-setup/pull/48) |
 | [**Awesome-AI-Memory**](https://github.com/IAAR-Shanghai/Awesome-AI-Memory) · Awesome AI Memory | LLM Memory | A curated knowledge base on | ⭐ 1K | [#38](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/pull/38) |
 | [**deep-representation-learning-book**](https://github.com/Ma-Lab-Berkeley/deep-representation-learning-book) · Learning Deep Representations of Data Distributions | ⭐ 1K | [#57](https://github.com/Ma-Lab-Berkeley/deep-representation-learning-book/pull/57) |
+| [**mcp-searxng**](https://github.com/ihor-sokoliuk/mcp-searxng) · Private web search for AI assistants via SearXNG — supports  | ⭐ 1K | [#63](https://github.com/ihor-sokoliuk/mcp-searxng/pull/63) |
 <!--END_SECTION:oss-->
 
 # 🔭 activity
