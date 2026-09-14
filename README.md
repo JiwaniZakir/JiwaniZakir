@@ -67,10 +67,10 @@
 
 | Project | Stars | PRs |
 |---------|:-----:|-----|
-| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 243K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
-| [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 165K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
-| [**dify**](https://github.com/langgenius/dify) · Build Agentic workflows, RAG pipelines, with rich AI model a | ⭐ 155K | [#33702](https://github.com/langgenius/dify/pull/33702) |
-| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · DeepTutor: Lifelong Personalized Tutoring. https://deeptutor | ⭐ 39K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
+| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 245K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
+| [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 166K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
+| [**dify**](https://github.com/langgenius/dify) · Build Agentic workflows, RAG pipelines, with rich AI model a | ⭐ 156K | [#33702](https://github.com/langgenius/dify/pull/33702) |
+| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · DeepTutor: Lifelong Personalized Tutoring. https://deeptutor | ⭐ 40K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
 | [**QwenPaw**](https://github.com/agentscope-ai/QwenPaw) · Your Personal AI Assistant; easy to install, deploy on your  | ⭐ 35K | [#1629](https://github.com/agentscope-ai/QwenPaw/pull/1629) |
 | [**fish-speech**](https://github.com/fishaudio/fish-speech) · SOTA Open Source TTS | ⭐ 33K | [#1257](https://github.com/fishaudio/fish-speech/pull/1257) |
 | [**pytorch_geometric**](https://github.com/pyg-team/pytorch_geometric) · Graph Neural Network Library for PyTorch | ⭐ 24K | [#10645](https://github.com/pyg-team/pytorch_geometric/pull/10645) |
@@ -84,8 +84,8 @@
 | [**openchamber**](https://github.com/openchamber/openchamber) · Agentic Development Environment based on OpenCode AI agent | ⭐ 10K | [#799](https://github.com/openchamber/openchamber/pull/799) |
 | [**inference**](https://github.com/xorbitsai/inference) · Swap GPT for any LLM by changing a single line of code. Xinf | ⭐ 10K | [#4757](https://github.com/xorbitsai/inference/pull/4757) |
 | [**ghostfolio**](https://github.com/ghostfolio/ghostfolio) · Open Source Wealth Management Software. Angular + NestJS + P | ⭐ 9K | [#6598](https://github.com/ghostfolio/ghostfolio/pull/6598) |
-| [**angr**](https://github.com/angr/angr) · A powerful and user-friendly binary analysis platform! | ⭐ 9K | [#6265](https://github.com/angr/angr/pull/6265) |
 | [**local-deep-research**](https://github.com/LearningCircuit/local-deep-research) ·  ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all | ⭐ 9K | [#3359](https://github.com/LearningCircuit/local-deep-research/pull/3359) |
+| [**angr**](https://github.com/angr/angr) · A powerful and user-friendly binary analysis platform! | ⭐ 9K | [#6265](https://github.com/angr/angr/pull/6265) |
 | [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 7K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
 | [**yn**](https://github.com/purocean/yn) · A highly extensible Markdown editor. Version control, AI Cop | ⭐ 7K | [#469](https://github.com/purocean/yn/pull/469) |
 | [**mission-control**](https://github.com/builderz-labs/mission-control) · Self-hosted control plane for AI agents: dispatch tasks, rev | ⭐ 6K | [#595](https://github.com/builderz-labs/mission-control/pull/595) |
@@ -101,9 +101,9 @@
 | [**badssl.com**](https://github.com/chromium/badssl.com) · :lock: Memorable site for testing clients against bad SSL co | ⭐ 3K | [#552](https://github.com/chromium/badssl.com/pull/552) |
 | [**TensorRT**](https://github.com/pytorch/TensorRT) · PyTorch/TorchScript/FX compiler for NVIDIA GPUs using Tensor | ⭐ 3K | [#4155](https://github.com/pytorch/TensorRT/pull/4155) |
 | [**torchmetrics**](https://github.com/Lightning-AI/torchmetrics) · Machine learning metrics for distributed, scalable PyTorch a | ⭐ 2K | [#3354](https://github.com/Lightning-AI/torchmetrics/pull/3354) |
-| [**sagemaker-python-sdk**](https://github.com/aws/sagemaker-python-sdk) · A library for training and deploying machine learning models | ⭐ 2K | [#5704](https://github.com/aws/sagemaker-python-sdk/pull/5704) |
 | [**learnhouse**](https://github.com/learnhouse/learnhouse) · The Next-gen Open Source learning platform for everyone ✨ | ⭐ 2K | [#705](https://github.com/learnhouse/learnhouse/pull/705) · [#726](https://github.com/learnhouse/learnhouse/pull/726) |
-| [**BitFun**](https://github.com/GCWing/BitFun) · OpenBitFun combines a high-performance agent runtime written | ⭐ 2K | [#414](https://github.com/GCWing/BitFun/pull/414) |
+| [**sagemaker-python-sdk**](https://github.com/aws/sagemaker-python-sdk) · A library for training and deploying machine learning models | ⭐ 2K | [#5704](https://github.com/aws/sagemaker-python-sdk/pull/5704) |
+| [**OpenBitFun**](https://github.com/GCWing/OpenBitFun) · OpenBitFun combines a high-performance agent runtime written | ⭐ 2K | [#414](https://github.com/GCWing/OpenBitFun/pull/414) |
 | [**claude-code-tools**](https://github.com/pchalasani/claude-code-tools) · Practical productivity tools for Claude Code, Codex-CLI, and | ⭐ 2K | [#69](https://github.com/pchalasani/claude-code-tools/pull/69) |
 | [**core**](https://github.com/RedPlanetHQ/core) · Your Personal AI OS | ⭐ 2K | [#762](https://github.com/RedPlanetHQ/core/pull/762) |
 | [**mcp**](https://github.com/MicrosoftDocs/mcp) · Official Microsoft Learn MCP Server and CLI tool – powering  | ⭐ 2K | [#144](https://github.com/MicrosoftDocs/mcp/pull/144) |
@@ -116,6 +116,7 @@
 | [**Awesome-AI-Memory**](https://github.com/IAAR-Shanghai/Awesome-AI-Memory) · Awesome AI Memory | LLM Memory | A curated knowledge base on | ⭐ 1K | [#38](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/pull/38) |
 | [**chat-js**](https://github.com/FranciscoMoretti/chat-js) · Production-ready AI chat. Start here and make it your own. F | ⭐ 1K | [#183](https://github.com/FranciscoMoretti/chat-js/pull/183) |
 | [**deep-representation-learning-book**](https://github.com/Ma-Lab-Berkeley/deep-representation-learning-book) · Learning Deep Representations of Data Distributions | ⭐ 1K | [#57](https://github.com/Ma-Lab-Berkeley/deep-representation-learning-book/pull/57) |
+| [**powercontext**](https://github.com/oceanbase/powercontext) · Not only memory but a full story. | ⭐ 1K | [#902](https://github.com/oceanbase/powercontext/pull/902) |
 <!--END_SECTION:oss-->
 
 # 🔭 activity
