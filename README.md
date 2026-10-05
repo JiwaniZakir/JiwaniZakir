@@ -67,10 +67,10 @@
 
 | Project | Stars | PRs |
 |---------|:-----:|-----|
-| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 250K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
+| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 251K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
 | [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 167K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
-| [**dify**](https://github.com/langgenius/dify) · Build Agentic workflows, RAG pipelines, with rich AI model a | ⭐ 157K | [#33702](https://github.com/langgenius/dify/pull/33702) |
-| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · DeepTutor: Lifelong Personalized Tutoring. https://deeptutor | ⭐ 40K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
+| [**dify**](https://github.com/langgenius/dify) · Build Agentic workflows, RAG pipelines, with rich AI model a | ⭐ 158K | [#33702](https://github.com/langgenius/dify/pull/33702) |
+| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · DeepTutor: Lifelong Personalized Tutoring. https://deeptutor | ⭐ 41K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
 | [**QwenPaw**](https://github.com/agentscope-ai/QwenPaw) · Your Personal AI Assistant; easy to install, deploy on your  | ⭐ 35K | [#1629](https://github.com/agentscope-ai/QwenPaw/pull/1629) |
 | [**fish-speech**](https://github.com/fishaudio/fish-speech) · SOTA Open Source TTS | ⭐ 33K | [#1257](https://github.com/fishaudio/fish-speech/pull/1257) |
 | [**pytorch_geometric**](https://github.com/pyg-team/pytorch_geometric) · Graph Neural Network Library for PyTorch | ⭐ 24K | [#10645](https://github.com/pyg-team/pytorch_geometric/pull/10645) |
@@ -86,7 +86,7 @@
 | [**ghostfolio**](https://github.com/ghostfolio/ghostfolio) · Open Source Wealth Management Software. Angular + NestJS + P | ⭐ 9K | [#6598](https://github.com/ghostfolio/ghostfolio/pull/6598) |
 | [**local-deep-research**](https://github.com/LearningCircuit/local-deep-research) ·  ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all | ⭐ 9K | [#3359](https://github.com/LearningCircuit/local-deep-research/pull/3359) |
 | [**angr**](https://github.com/angr/angr) · A powerful and user-friendly binary analysis platform! | ⭐ 9K | [#6265](https://github.com/angr/angr/pull/6265) |
-| [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 7K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
+| [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 8K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
 | [**yn**](https://github.com/purocean/yn) · A highly extensible Markdown editor featuring version contro | ⭐ 7K | [#469](https://github.com/purocean/yn/pull/469) |
 | [**mission-control**](https://github.com/builderz-labs/mission-control) · Self-hosted control plane for AI agents: dispatch tasks, rev | ⭐ 6K | [#595](https://github.com/builderz-labs/mission-control/pull/595) |
 | [**rllm**](https://github.com/rllm-org/rllm) · Democratizing Reinforcement Learning for LLMs | ⭐ 6K | [#471](https://github.com/rllm-org/rllm/pull/471) |
@@ -96,7 +96,7 @@
 | [**PPTAgent**](https://github.com/icip-cas/PPTAgent) · An Agentic Framework for Reflective PowerPoint Generation | ⭐ 5K | [#222](https://github.com/icip-cas/PPTAgent/pull/222) |
 | [**structlog**](https://github.com/hynek/structlog) · Simple, powerful, and fast logging for Python. | ⭐ 5K | [#795](https://github.com/hynek/structlog/pull/795) |
 | [**claude-devtools**](https://github.com/matt1398/claude-devtools) · The missing DevTools for Claude Code — inspect session logs, | ⭐ 4K | [#157](https://github.com/matt1398/claude-devtools/pull/157) |
-| [**pipeshub-ai**](https://github.com/pipeshub-ai/pipeshub-ai) · PipesHub is an open-source platform for securely connecting  | ⭐ 4K | [#1923](https://github.com/pipeshub-ai/pipeshub-ai/pull/1923) |
+| [**pipeshub-ai**](https://github.com/pipeshub-ai/pipeshub-ai) · The open-source context layer for AI agents. PipesHub turns  | ⭐ 4K | [#1923](https://github.com/pipeshub-ai/pipeshub-ai/pull/1923) |
 | [**kana-dojo**](https://github.com/lingdojo/kana-dojo) · Aesthetic, minimalist platform for learning Japanese inspire | ⭐ 4K | [#8815](https://github.com/lingdojo/kana-dojo/pull/8815) · [#8856](https://github.com/lingdojo/kana-dojo/pull/8856) · [#8890](https://github.com/lingdojo/kana-dojo/pull/8890) |
 | [**badssl.com**](https://github.com/chromium/badssl.com) · :lock: Memorable site for testing clients against bad SSL co | ⭐ 3K | [#552](https://github.com/chromium/badssl.com/pull/552) |
 | [**TensorRT**](https://github.com/pytorch/TensorRT) · PyTorch/TorchScript/FX compiler for NVIDIA GPUs using Tensor | ⭐ 3K | [#4155](https://github.com/pytorch/TensorRT/pull/4155) |
