@@ -67,10 +67,10 @@
 
 | Project | Stars | PRs |
 |---------|:-----:|-----|
-| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 264K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
+| [**hermes-agent**](https://github.com/NousResearch/hermes-agent) · The agent that grows with you | ⭐ 266K | [#2098](https://github.com/NousResearch/hermes-agent/pull/2098) |
 | [**transformers**](https://github.com/huggingface/transformers) · 🤗 Transformers: the model-definition framework for state-of- | ⭐ 169K | [#44782](https://github.com/huggingface/transformers/pull/44782) |
-| [**dify**](https://github.com/langgenius/dify) · Build Agentic workflows, RAG pipelines, with rich AI model a | ⭐ 161K | [#33702](https://github.com/langgenius/dify/pull/33702) |
-| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · DeepTutor: Lifelong Personalized Tutoring. https://deeptutor | ⭐ 60K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
+| [**dify**](https://github.com/langgenius/dify) · Build Agentic workflows, RAG pipelines, with rich AI model a | ⭐ 162K | [#33702](https://github.com/langgenius/dify/pull/33702) |
+| [**DeepTutor**](https://github.com/HKUDS/DeepTutor) · DeepTutor: Lifelong Personalized Tutoring. https://deeptutor | ⭐ 62K | [#340](https://github.com/HKUDS/DeepTutor/pull/340) |
 | [**QwenPaw**](https://github.com/agentscope-ai/QwenPaw) · Your Personal AI Assistant; easy to install, deploy on your  | ⭐ 38K | [#1629](https://github.com/agentscope-ai/QwenPaw/pull/1629) |
 | [**fish-speech**](https://github.com/fishaudio/fish-speech) · SOTA Open Source TTS | ⭐ 34K | [#1257](https://github.com/fishaudio/fish-speech/pull/1257) |
 | [**pytorch_geometric**](https://github.com/pyg-team/pytorch_geometric) · Graph Neural Network Library for PyTorch | ⭐ 24K | [#10645](https://github.com/pyg-team/pytorch_geometric/pull/10645) |
@@ -78,7 +78,7 @@
 | [**ms-swift**](https://github.com/modelscope/ms-swift) · Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qw | ⭐ 16K | [#9014](https://github.com/modelscope/ms-swift/pull/9014) |
 | [**prowler**](https://github.com/prowler-cloud/prowler) · This repo hosts Prowler OSS (CLI and Local Server). Prowler  | ⭐ 15K | [#10355](https://github.com/prowler-cloud/prowler/pull/10355) |
 | [**tvm**](https://github.com/apache/tvm) · Open Machine Learning Compiler Framework | ⭐ 14K | [#19407](https://github.com/apache/tvm/pull/19407) |
-| [**ida-pro-mcp**](https://github.com/mrexodia/ida-pro-mcp) · AI-powered reverse engineering assistant that bridges IDA Pr | ⭐ 13K | [#326](https://github.com/mrexodia/ida-pro-mcp/pull/326) |
+| [**ida-pro-mcp**](https://github.com/mrexodia/ida-pro-mcp) · AI-powered reverse engineering assistant that bridges IDA Pr | ⭐ 14K | [#326](https://github.com/mrexodia/ida-pro-mcp/pull/326) |
 | [**openchamber**](https://github.com/openchamber/openchamber) · Agentic Development Environment based on OpenCode AI agent | ⭐ 13K | [#799](https://github.com/openchamber/openchamber/pull/799) |
 | [**Windows-MCP**](https://github.com/CursorTouch/Windows-MCP) · MCP Server for Computer Use in Windows | ⭐ 12K | [#166](https://github.com/CursorTouch/Windows-MCP/pull/166) |
 | [**fiftyone**](https://github.com/voxel51/fiftyone) · Refine high-quality datasets and visual AI models | ⭐ 11K | [#7309](https://github.com/voxel51/fiftyone/pull/7309) |
@@ -90,20 +90,20 @@
 | [**yn**](https://github.com/purocean/yn) · A highly extensible Markdown editor featuring version contro | ⭐ 7K | [#469](https://github.com/purocean/yn/pull/469) |
 | [**mission-control**](https://github.com/builderz-labs/mission-control) · Self-hosted control plane for AI agents: dispatch tasks, rev | ⭐ 7K | [#595](https://github.com/builderz-labs/mission-control/pull/595) |
 | [**dograh**](https://github.com/dograh-hq/dograh) · Open source voice AI platform. Self-hosted alternative to Va | ⭐ 6K | [#241](https://github.com/dograh-hq/dograh/pull/241) |
-| [**rllm**](https://github.com/rllm-org/rllm) · Democratizing Reinforcement Learning for LLMs | ⭐ 6K | [#471](https://github.com/rllm-org/rllm/pull/471) |
 | [**AReaL**](https://github.com/areal-project/AReaL) · The RL Bridge for LLM-based Agent Applications. Made Simple  | ⭐ 6K | [#1139](https://github.com/areal-project/AReaL/pull/1139) |
+| [**rllm**](https://github.com/rllm-org/rllm) · Democratizing Reinforcement Learning for LLMs | ⭐ 6K | [#471](https://github.com/rllm-org/rllm/pull/471) |
 | [**Templater**](https://github.com/SilentVoid13/Templater) · A template plugin for obsidian | ⭐ 5K | [#1709](https://github.com/SilentVoid13/Templater/pull/1709) |
 | [**PPTAgent**](https://github.com/icip-cas/PPTAgent) · An Agentic Framework for Reflective PowerPoint Generation | ⭐ 5K | [#222](https://github.com/icip-cas/PPTAgent/pull/222) |
 | [**structlog**](https://github.com/hynek/structlog) · Simple, powerful, and fast logging for Python. | ⭐ 5K | [#795](https://github.com/hynek/structlog/pull/795) |
 | [**pipeshub-ai**](https://github.com/pipeshub-ai/pipeshub-ai) · The open-source context layer for AI agents and enterprise A | ⭐ 4K | [#1923](https://github.com/pipeshub-ai/pipeshub-ai/pull/1923) |
-| [**claude-devtools**](https://github.com/matt1398/claude-devtools) · The missing DevTools for Claude Code — inspect session logs, | ⭐ 4K | [#157](https://github.com/matt1398/claude-devtools/pull/157) |
 | [**OpenBitFun**](https://github.com/openBitFun/OpenBitFun) · OpenBitFun combines a high-performance agent runtime written | ⭐ 4K | [#414](https://github.com/openBitFun/OpenBitFun/pull/414) |
+| [**claude-devtools**](https://github.com/matt1398/claude-devtools) · The missing DevTools for Claude Code — inspect session logs, | ⭐ 4K | [#157](https://github.com/matt1398/claude-devtools/pull/157) |
 | [**kana-dojo**](https://github.com/lingdojo/kana-dojo) · Aesthetic, minimalist platform for learning Japanese inspire | ⭐ 4K | [#8815](https://github.com/lingdojo/kana-dojo/pull/8815) · [#8856](https://github.com/lingdojo/kana-dojo/pull/8856) · [#8890](https://github.com/lingdojo/kana-dojo/pull/8890) |
 | [**badssl.com**](https://github.com/chromium/badssl.com) · :lock: Memorable site for testing clients against bad SSL co | ⭐ 3K | [#552](https://github.com/chromium/badssl.com/pull/552) |
 | [**TensorRT**](https://github.com/pytorch/TensorRT) · PyTorch/TorchScript/FX compiler for NVIDIA GPUs using Tensor | ⭐ 3K | [#4155](https://github.com/pytorch/TensorRT/pull/4155) |
 | [**mflux**](https://github.com/mflux-community/mflux) · Apple MLX native implementations of state-of-the-art generat | ⭐ 3K | [#406](https://github.com/mflux-community/mflux/pull/406) |
-| [**torchmetrics**](https://github.com/Lightning-AI/torchmetrics) · Machine learning metrics for distributed, scalable PyTorch a | ⭐ 2K | [#3354](https://github.com/Lightning-AI/torchmetrics/pull/3354) |
 | [**learnhouse**](https://github.com/learnhouse/learnhouse) · The Next-gen Open Source learning platform for everyone ✨ | ⭐ 2K | [#705](https://github.com/learnhouse/learnhouse/pull/705) · [#726](https://github.com/learnhouse/learnhouse/pull/726) |
+| [**torchmetrics**](https://github.com/Lightning-AI/torchmetrics) · Machine learning metrics for distributed, scalable PyTorch a | ⭐ 2K | [#3354](https://github.com/Lightning-AI/torchmetrics/pull/3354) |
 | [**sagemaker-python-sdk**](https://github.com/aws/sagemaker-python-sdk) · A library for training and deploying machine learning models | ⭐ 2K | [#5704](https://github.com/aws/sagemaker-python-sdk/pull/5704) |
 | [**claude-code-tools**](https://github.com/pchalasani/claude-code-tools) · Practical productivity tools for Claude Code, Codex-CLI, and | ⭐ 2K | [#69](https://github.com/pchalasani/claude-code-tools/pull/69) |
 | [**core**](https://github.com/RedPlanetHQ/core) · Your Personal AI OS | ⭐ 2K | [#762](https://github.com/RedPlanetHQ/core/pull/762) |
@@ -112,10 +112,10 @@
 | [**powercontext**](https://github.com/oceanbase/powercontext) · Agent memory: long-term memory & agent memory handoff. Claud | ⭐ 2K | [#902](https://github.com/oceanbase/powercontext/pull/902) |
 | [**neuromancer**](https://github.com/pnnl/neuromancer) · Pytorch-based framework for solving parametric constrained o | ⭐ 1K | [#281](https://github.com/pnnl/neuromancer/pull/281) |
 | [**mcp-searxng**](https://github.com/ihor-sokoliuk/mcp-searxng) · Private web search for AI assistants via SearXNG — supports  | ⭐ 1K | [#63](https://github.com/ihor-sokoliuk/mcp-searxng/pull/63) |
-| [**ai-setup**](https://github.com/caliber-ai-org/ai-setup) · Continuously sync your AI setups with one command. Codebase  | ⭐ 1K | [#43](https://github.com/caliber-ai-org/ai-setup/pull/43) · [#44](https://github.com/caliber-ai-org/ai-setup/pull/44) · [#48](https://github.com/caliber-ai-org/ai-setup/pull/48) |
 | [**Awesome-AI-Memory**](https://github.com/IAAR-Shanghai/Awesome-AI-Memory) · Awesome AI Memory | LLM Memory | A curated knowledge base on | ⭐ 1K | [#38](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/pull/38) |
+| [**ai-setup**](https://github.com/caliber-ai-org/ai-setup) · Continuously sync your AI setups with one command. Codebase  | ⭐ 1K | [#43](https://github.com/caliber-ai-org/ai-setup/pull/43) · [#44](https://github.com/caliber-ai-org/ai-setup/pull/44) · [#48](https://github.com/caliber-ai-org/ai-setup/pull/48) |
 | [**mlforecast**](https://github.com/Nixtla/mlforecast) · Scalable machine 🤖 learning for time series forecasting. | ⭐ 1K | [#624](https://github.com/Nixtla/mlforecast/pull/624) |
-| [**chat-js**](https://github.com/FranciscoMoretti/chat-js) · Production-ready AI chat. Start here and make it your own. | ⭐ 1K | [#183](https://github.com/FranciscoMoretti/chat-js/pull/183) |
+| [**chat-js**](https://github.com/FranciscoMoretti/chat-js) · The building blocks for your AI app. | ⭐ 1K | [#183](https://github.com/FranciscoMoretti/chat-js/pull/183) |
 | [**deep-representation-learning-book**](https://github.com/Ma-Lab-Berkeley/deep-representation-learning-book) · Learning Deep Representations of Data Distributions | ⭐ 1K | [#57](https://github.com/Ma-Lab-Berkeley/deep-representation-learning-book/pull/57) |
 | [**Automodel**](https://github.com/NVIDIA-NeMo/Automodel) · 🚀 Pytorch Distributed native training library for LLMs/VLMs  | ⭐ 1K | [#1654](https://github.com/NVIDIA-NeMo/Automodel/pull/1654) |
 <!--END_SECTION:oss-->
